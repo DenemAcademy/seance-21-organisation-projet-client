@@ -1,0 +1,537 @@
+c'est parti on attaque la séance numéro 21 et on va parler d'organisation donc cette
+partie cette séance est extrêmement intéressante et importante pourquoi
+parce que c'est tout simplement une partie où je vais vous donner des tips et
+je vais vous montrer comment moi je m'organise sur tous mes projets et
+comment faire pour que ce soit simple, rapide, efficace, que votre client soit
+satisfait par la suite donc le point important d'une part c'est que le silence
+crée le doute donc il faut en aucun cas laisser votre client sans réponse ou même
+ne jamais le relancer donc là imaginons que j'ai tout simplement signé
+l'infrastructure IA que j'avais, enfin la conciergerie IA que j'avais audité
+justement lors de la précédente séance et bien là ce que je vais faire c'est
+qu'ensuite je vais être constamment en contact avec mon client donc ça devient
+plus un prospect ça devient un client donc le projet doit être visible donc ça
+aussi c'est important on doit constamment lui faire des retours par
+rapport au projet et on doit valoriser ce qu'on fait c'est je pense
+le point le plus important pourquoi parce que vous travaillez vous faites
+quelque chose et je pense que si derrière ça fonctionne et bien vous
+pouvez être que satisfait donc valoriser votre travail tout le temps tout le
+temps tout le temps c'est important ça va montrer au client que vous avez
+bossé que vous êtes fier de ce que vous avez fait et qu'il n'y aura aucun
+retour de sa part c'est important si derrière vous n'êtes pas sûr de
+ce que vous dites si derrière vous avez un doute sur la qualité de
+votre projet ça ne va pas fonctionner il va le remarquer non ce que vous
+avez livré c'est parfait et il n'y a pas de retour de sa part par rapport à la
+qualité donc ce qu'on va faire c'est que d'une part on a réalisé l'audit
+ensuite on va faire du cadrage pourquoi parce que le client veut toujours plus
+ça il faut se le mettre en tête ça va partir d'une demande et après
+il y aura des rajouts constamment le but c'est de cadrer à chaque fois
+c'est vous le boss c'est pas votre client c'est pas lui qui va faire la
+loi il a signé quelque chose vous lui livrez la chose s'il veut quelque chose de
+supplémentaire il paye c'est comme ça que ça doit se passer ensuite on va lui
+présenter une V1 donc la V1 ça lui permet d'avoir des bases qui se
+projettent à l'avenir du projet donc il arrive à comprendre à quoi ça va
+ressembler ensuite on va prendre ses retours ensuite on va faire une V2
+après on va faire des tests et après on va faire la livraison
+voilà comment on structure un projet c'est comme ça chaque fois ça doit
+fonctionner on a toujours cette boucle là ça peut passer sur une V3 sur une
+V4 ou une V5 plus important c'est voilà on améliore constamment jusqu'à
+tant qu'il soit satisfait bien sûr si derrière faut lui taper un peu sur les
+doigts pour que voilà il commence à comprendre que le projet est finalisé
+on le fait c'est pas un souci le but c'est pas non plus que ce soit lui le
+droit que derrière vous allez jusqu'à une V10 parce que monsieur veut que le
+chatbot je sais pas par exemple est une fonctionnalité supplémentaire
+donc le point important c'est un rythme où on a une relance tous les trois
+jours pourquoi parce que on a besoin d'avoir cette relation avec le kit on
+parle d'un système d'automatisation qui peut être très rapide à créer
+comme on l'a vu en 4-5 jours pour un petit chatbot c'est faisable donc la V1
+on la tape à partir du deuxième jour au troisième jour ensuite on attend ses
+retours avec les tests après on relance etc le but c'est qu'on aille
+vite qu'on scale vite et qu'on arrive à un résultat rapidement et du coup
+une fin de projet rapide aussi donc je vous ai listé 23 tips on va les
+voir ensemble on va essayer de les faire aussi sur codex directement donc pas
+tous par exemple la relance tous les trois jours comme je vous ai dit c'est
+que même si t'as rien de spécial à dire par exemple voilà t'as fait une V1
+lundi tu lui envoies la V1 j'ai hello Hugo j'espère que tu vas bien voilà
+j'ai fait la V1 dis moi ce que t'en penses
+mercredi ils te répond pas tu le relance tu le relance t'as pas
+attendre une semaine deux semaines trois semaines pour avoir un retour de sa
+part non donc tu le relance mercredi si mercredi il y a toujours
+pas de réponse je dis pas de réponse on redit pas de réponse tu le relance samedi
+c'est pas grave le but c'est quitte à l'harceler
+et bien on harcèle pourquoi parce que bah d'une part le temps enfin votre
+temps c'est de l'argent et d'une autre part vous n'avez pas que ça à
+faire donc c'est pas mauvais ce que vous faites justement c'est pour le bien du
+projet donc s'il faut encore une fois nous taper sur les doigts parce qu'il est
+pas assez rapide on le fait parce que quand vous avez taffé sur enfin
+travailler pour des grandes boîtes sur des projets enfin sur des c'est à
+50 60 millions par an le plus souvent vous n'allez pas avoir affaire au
+boss donc ça va être le pôle en dessous et derrière ça se trouve le
+pôle en dessous et non donc vous êtes vous avez perdu
+du temps donc ce que vous faites c'est tous les trois jours vous relancez
+constamment et vous mettez bien sûr la personne au dessus dans les échanges comme
+ça derrière s'il vous fait une reproche par la suite parce que ça
+m'est déjà arrivé c'est pour ça que je vous dis ça bah il était au
+courant et que derrière c'est pas de ta faute si derrière les personnes
+répondent pas donc c'est pour ça vraiment mettez vous en tête que
+même si vous avez rien à dire vous relancez tout le temps tout le
+temps tout le temps jusqu'à tant que le projet soit terminé parce qu'on
+va pas laisser traîner un projet pendant deux trois mois le but c'est
+qu'on fasse rapidement ce projet là qui soit satisfait et qu'ensuite on lui
+propose un upsell comme ça sur deux mois on peut faire une signature sur deux
+projets donc voilà ne jamais disparaître donc ça revient sur la
+partie relancée tous les trois jours donc à qui on peut accepter un délai
+il accepte beaucoup moins de silence c'est pas grave si derrière vous avez
+un peu pris du retard vous lui dites vous lui faites comprendre mais jamais mais
+on laisse le client sur un mail qui nous envoyer en attente de 3 à 4 5 jours
+c'est pas possible ça faut lui répondre très rapidement moins de 24 heures c'est
+très important et une fois que vous avez par exemple livré la v1 on lui
+annonce la prochaine étape le but c'est qu'il est lui aussi une bonne
+structure qui est un bon suivi comme ça tout va bien se passer et
+derrière si je sais pas par exemple il vous demande quelque chose qui
+n'était pas dans la proposition et bien vous pouvez dire non mais c'est pas ce
+qu'on s'était dit moi voilà je me suis organisé comme ça c'était pas
+prévu etc c'est vous qui devait driver le projet lui faut se mettre en
+tête qu'il connaît rien n'y a donc vous êtes l'expert donc c'est votre
+propre roadmap qui doit respecter c'est pas à lui de faire respecter
+sa roadmap non ce que vous proposez une solution qui va lui faire gagner du
+temps et de l'argent si il est sérieux tant mieux si il est pas sérieux il
+faudra lui dire on va créer une présentation projet dès le début donc
+c'est ce qu'on a fait on a fait un audit donc ensuite on va faire un
+cadrage donc là imaginons le client il a signé c'est simple on va faire
+c'est simple on va retourner bureau mon business
+tac tac tac on était sur client nouveau terminal au dossier
+hop copier ça c'est la commande du holomode
+tac tac je vais la recoller
+hop donc update
+ok top je relance donc là comme vous pouvez voir on a fait la présentation
+enfin l'audit ensemble il est juste ici qu'on l'a envoyé à l'air github
+donc je vais dire
+comprend l'audit le client a signé j'ai besoin que tu me fasses
+la partie
+cadrage parenthèse planning
+soit naturel
+le planning
+étant deux semaines
+Sur une nouvelle page GitHub, on reprend le design de l'audit.
+Donc voilà, là on va avoir un cadrage.
+C'est important parce que la plupart des gens vont juste envoyer des petits mails.
+Nous on a besoin d'avoir un vrai suivi.
+Parce que d'une part, ça va nous permettre aussi de le garder en stock dans notre dossier.
+Donc avoir toujours des informations supplémentaires, des données.
+Comme ça on pourra enrichir justement Codex.
+On pourra comprendre plus ce qu'on doit faire.
+Ce qu'on a cadré, on sait notre deadline, etc.
+Et en plus de ça, ça rassure le client, ça montre notre professionnalisme.
+Donc c'est parfait, c'est comme ça qu'il faut faire.
+Selon moi, après bien sûr, vous pouvez avoir vos propres méthodes.
+Moi je vous montre ce que je fais et ce qui marche.
+Donc voilà, on va attendre qu'ils finissent du coup la partie cadrage.
+Donc voilà, ça revient au même qu'on utilise le design de la présentation.
+Moi c'est ce que je fais, c'est ce que j'aime bien faire et ce que j'essaye de faire.
+Parce qu'on peut toujours s'améliorer.
+Mais de le faire rentrer dans un univers.
+Le but c'est qu'on lui offre une expérience.
+Il l'entre dans l'air de bière.
+Donc en faisant ça, s'il a une bonne expérience, il reviendra vers vous directement.
+C'est ça qui est important.
+C'est pour ça qu'à chaque fois, je lui fais une présentation.
+Après on verra la présentation pour la verre.
+Le tips numéro 6.
+On va le laisser travailler un petit peu.
+Donc on le laisse travailler.
+Après du coup, nous on va avoir besoin de cadrer aussi le client.
+Donc c'est très très important cette partie là.
+Pourquoi ? Parce que je vous l'ai dit tout à l'heure.
+La plupart, vraiment 70% des clients que j'ai eu veulent à chaque fois des petites dates supplémentaires.
+Il faut savoir genre non, parce que sinon ça ne s'arrête pas.
+Par exemple, pour un chatbot IA, j'avais travaillé avec une boîte.
+Tout était fonctionnel, tout était parfait.
+Mais en gros, il m'a rajouté une petite mission en plus que j'ai pas facturé.
+Pourquoi ? Parce que j'ai pas su cadrer le projet.
+Du coup, ça m'a fait perdre une journée.
+Vous pouvez l'offrir si vous voulez, tout dépend de votre stratégie.
+Mais il faut savoir parfois dire non.
+C'est pour ça que nous on crée ce cadrage là.
+Comme ça, s'il nous demande par exemple une partie supplémentaire.
+Il faut être cash direct, on envoie une facture.
+Ou on lui envoie dans le mail.
+Hello Jérémy, j'étais pas prévu.
+Regarde le cadrage que je t'avais envoyé.
+La limite, je peux te facturer un peu moins cher.
+Ça va me prendre 3 jours à faire.
+Donc 3 jours de TGM, on sera à peu près à 1000€.
+Est-ce que ça te va pendant l'interrogation ?
+Faites-le dire ça. Soit derrière, ça vous fait une mission en plus.
+Ou soit il va dire non. Et c'est pas grave.
+S'il dit non, c'est comme ça.
+Et c'est pareil du coup.
+C'est pour le numéro 8, le tips 8.
+C'est d'imiter les choix du client.
+Donc ce qu'on veut c'est pas lui faire 20 choix.
+Est-ce que tu préfères que le chatbot répond du ton amical ?
+Du ton, je sais pas comment dire ça.
+En vouvoiement ? En tutoiement ?
+Est-ce que tu veux qu'il répond de manière court ?
+Non, tu lui fais 1 choix.
+Voilà moi ce que je te conseille.
+C'est toi l'expert, c'est toi qui doit le diriger.
+Parce que si derrière, à chaque fois, tu dois lui demander son avis, ça va pas le faire.
+Tu vas perdre beaucoup trop de temps.
+Tu vas devoir faire des allers-retours.
+Et au final, ça va prendre plus de temps que prévu.
+Donc quand tu lui fais un mail.
+Justement, là par exemple, j'ai fini la V1.
+Je lui envoie la présentation.
+Est-ce que tu peux tester s'il te plait ?
+Dis moi ce que t'en penses.
+Tu récupères tous ces points.
+Ok, du coup je vais améliorer.
+Je vais te faire une V2.
+Avec tous ces points là.
+Et ensuite tu fais la V2.
+Et après tu continues sur ce principe là.
+Donc 2 semaines.
+Là on a tout le plan.
+Là voilà c'est top.
+Là je pourrais tout simplement lui envoyer.
+Prototype, base de tonia, checklist.
+C'est top.
+Là on a les informations.
+On va l'ouvrir un petit peu plus en grand.
+Donc il va vous falloir des informations.
+Par exemple de Clé API.
+Donc vous avez 2 solutions.
+Soit c'est un amateur.
+En tout ce qui est technologie etc.
+Sur internet.
+Donc vous lui proposez une facturation.
+Tous les mois des outils que vous utilisez.
+Donc par exemple.
+Open AI API.
+Ça va coûter 20€ par mois.
+Vous lui dites je réfactue 20€ en plus.
+Je m'occupe de tout.
+Si vous utilisez SuperBase.
+Il vous dit je peux créer une compte.
+Mais par contre ça sera tant par mois.
+Ou soit vous lui demandez d'aller récupérer.
+L'une c'est de ne pas perdre de temps par rapport à ça.
+L'une c'est d'aller au plus vite.
+Donc s'il ne répond pas au niveau de Clé API.
+Vous le relancez tous les 3 jours.
+Même tous les 2 jours à la limite.
+Pour des choses comme ça.
+Parce qu'il ne faut pas perdre de temps.
+Pour juste récupérer des accès.
+Vous prenez 2 semaines.
+Laissez tomber.
+Vous n'avez pas de rentable sur le long terme.
+Ce n'est pas utile.
+Donc voilà.
+Là c'est un petit exemple.
+Là on a la présentation.
+Maison Lucas Audit.
+Restylia Cadrage.
+Donc là je lui demande de changer de lien.
+Parce qu'il a 2 fois le nom du restaurant.
+Je vais lui demander de changer de lien.
+Donc là on attend un petit peu.
+Je vais changer de lien.
+Pour que ce soit un peu plus propre.
+Vous avez compris le principe.
+Une fois que derrière vous lui envoyez le cadrage.
+Dans la présentation.
+Vous avez demandé des informations.
+Est-ce que c'est possible d'avoir des accès.
+Donc si vous vous les donnez.
+Tant mieux.
+Si vous ne les donnez pas.
+Vous gérez tout seul.
+Vous lui dites.
+Je te fais payer par mois.
+Vous avez aussi toute la maintenance.
+Et puis ça n'a rien à faire.
+Vous avez passé l'état du cadrage.
+Il l'a validé.
+Il l'a accepté.
+Vous avez les clés API. Vous pouvez commencer à build.
+Là va falloir faire la V1.
+Donc la V1.
+Ça ne va pas être compliqué.
+Vous avez terminé la V1.
+Encore une fois.
+Il ne faut pas prendre plus de 4-5 jours.
+Pour une version 1.
+Parce que le but c'est d'avoir ses retours.
+Un petit peu son analyse.
+Voir ce qu'il veut améliorer.
+Ça va être important.
+Parce que si vous prenez 2-3 semaines.
+Pour faire une V1.
+Et que ça ne correspond pas à ses attentes.
+Malgré que vous avez respecté le scope.
+Il y aura une galère.
+Et au final.
+Ça peut être compliqué par la suite.
+Voilà.
+Là je pourrais lui envoyer ça.
+Maintenant.
+Je passe.
+A la partie V1.
+Le cadrage est terminé.
+Je vais pouvoir attaquer du coup.
+La présentation.
+De ma V1.
+Là il a fini.
+Voilà.
+Maintenant.
+Maintenant.
+Faites-moi.
+Bon là je n'ai pas de projet créé.
+Ok.
+Donc là la V1 elle est terminée sur mon projet.
+Que je lui avais proposé.
+Qu'il a validé avec le cadrage.
+Maintenant on va lui faire la présentation.
+De la solution qu'on a créé sur la V1.
+On va lui envoyer un petit mail.
+Hello nouveau j'espère que tu vas bien.
+Donc voilà j'ai terminé la V1.
+Dis moi ce que tu en penses.
+C'est important d'avoir des retours.
+Donc ensuite on récupère.
+Ses retours.
+Et on retravaille du coup.
+Sur une V2.
+Une fois que la V2 elle est terminée.
+On part sur un nouveau mail.
+Et là ça va être un petit peu plus abouti.
+Sa réponse parce que vous aurez.
+Tout simplement.
+Mise.
+Ces modifications en avant.
+Sur le projet.
+Après c'est possible qu'il y ait une V3.
+Une V4.
+Il est gros ou pas.
+Parfois on peut taper des V5, V6.
+Ca c'est plus des infrastructures.
+Il y a 30, 40 mille euros.
+Par projet quoi.
+Pour un projet à 8000.
+On vise 3.
+3 modifications et après c'est done.
+Donc voilà.
+Là on en était aux tips 8.
+Et là faut bien cadrer.
+Parce que le client doit valider.
+Donc là pour le projet.
+On va lui mettre en place.
+Il va falloir lui demander.
+Si le design lui plait.
+Et puis voilà.
+C'est juste avoir plus d'informations.
+Pour que la V2 soit la dernière.
+Et il va falloir qu'on utilise à chaque fois.
+Pour le Tips & Ups.
+Fearful à chaque call.
+A chaque meet qu'on fait avec lui.
+On récupère la retranscription.
+Donc là j'ai pris celle du premier call.
+On a lu l'ordre de la science 18.
+19 plutôt.
+Ou je crois. Enfin je sais plus.
+Bref.
+Et on va télécharger du coup.
+Comment on fait déjà ?
+Je sais plus comment on fait.
+Je vais récupérer ça.
+Ouvrir dans un nouvel onglet.
+Non j'arrive pas à le télécharger.
+Je sais pas où c'est.
+Ok c'est là.
+Fait chier donc.
+On nous met toujours votre call.
+1.
+Go.
+Alors c'est quoi le nom du client ?
+C'est quoi le nom du client ?
+La maison du client carte.
+Call 1.
+C'est pour avoir un suivi.
+Après demander du contexte.
+Et donner du contexte aussi.
+À Codex ou Codecode peu importe.
+La maison du client carte.
+La carte.
+Fichier.
+Vous pouvez le mettre en texte.
+Ou en MD.
+Marque donc MD c'est très bien.
+Donc la carte.
+La maison.
+La carte.
+Donc vous pouvez le mettre en texte.
+Donc la carte.
+La maison.
+La carte.
+La maison.
+La maison.
+On va dans le bureau, business, client, maison carton, après on réorganisera tout projet
+Ensuite, vous faites une réunion 2 avec votre client, vous faites un call 2, un call 3, un call 4 etc
+C'est important d'avoir toujours ces retours écrits, toute la retranscription, comme ça vous ne perdez jamais, vous avez toujours tout le contexte
+Et vous n'oubliez rien, c'est très très très important
+Ce que vous avez vite oublié, c'est demande si vous notez rien
+Donc voilà, ensuite j'attends qu'ils finissent du coup la présentation
+La première version est terminée, place au test
+Après vous pouvez être plus naturel sur votre message, changer des photos etc
+Je vous montrerai vraiment one shot, comment s'organiser
+Une fois que vous avez livré l'AV1, vous lui envoyez le petit mail, la logo, voici l'AV1, dis moi ce que t'en penses, curieux d'avoir tes retours
+Et tu lui mets le lien de la présentation avec le lien de l'infrastructure IA en test etc
+Ça va pouvoir avoir un rendu explicatif de toute AV1 et en plus du projet
+C'est important, ça fait professionnel
+Donc ne jamais corriger sans noter, ça c'est important mais avec le fait de garder nos retranscriptions dans le dossier, il n'y aura pas de problème
+Transformer les retours en checklist
+Donc là, si on a un R2, on peut récupérer la retranscription en demandant un codex
+Voilà, fais moi une checklist par exemple
+Là, j'ouvre le projet
+Tac, maison du cas
+Call 1
+Donc là, il va le me faire directement dans le LND
+Ça aussi, c'est un point important de protéger le périmètre
+Donc si le client ajoute une idée, mets-le dans les évolutions futures au lieu de tout intégrer directement
+Une petite demande, ça ne peut vous prendre même pas 20 minutes à faire si vous demandez un codex
+Et encore, c'est toujours important de proposer ça en update
+Parce que sinon après sur les projets futurs, il va en profiter à chaque fois de vous demander des modifs
+Voilà, aussi faire des points courts
+Pas besoin d'écrire 200 lignes sur le mail
+Juste la présentation, un petit message plus du coup l'AV1 testable et fonctionnel
+S'il ne faut pas parler technique, ça c'est important
+Il faut parler du coup à quoi il va servir actuellement pour le client
+Là, je pourrais dire, voilà, pour l'AV1, ton client va pouvoir réserver directement sur cette partie-là
+Ça va lui faire gagner du temps pour comparer ton modèle d'avant
+C'est exactement ce qu'on voulait, le but c'est de vendre aussi le résultat de ce que vous avez mis en place
+Donc là, montrer l'avancement visuel, c'est comme ce qu'on a en train de faire
+On pourrait très bien lui mettre des screenshots en MCP par exemple
+Connecte-toi, là il est connecté en MCP, je lui dirais à codex
+Va sur ma V1, prends des screenshots du chatbot et mets-les dans la présentation de la V2
+Comme ça il aura toujours du visu, il pourra comprendre, il pourra avoir une vraie avancée
+Là, il m'a mis 43 tâches cauchables
+Là, imaginons qu'il m'a donné son retour sur l'AV1, j'ai 43 tâches cauchables
+Ce que vous pouvez faire, regardez, c'est très simple
+Encore une fois, c'est de l'organisation, c'est un jeu, c'est du Lego
+Plus vous vous organisez correctement, plus ça va être simple
+C'est une checklist sur son retour
+Donc là, je peux aller la récupérer et la donner à codex
+Ok, maintenant à ton tour, c'est à toi de jouer
+T'as 43 tâches à améliorer
+C'est simple, net et efficace, il va les faire en boucle
+Tu lui dis, chaque tâche doit être testée en MCP pour voir si c'est fonctionnel
+Et ensuite, dès qu'il aura terminé, donc ça va lui prendre une heure, deux heures, le temps de bien tout faire
+Voilà, vous avez fait votre V2, elle est déjà prête
+Ensuite, vous l'envoyez dans deux, trois jours au client pour lui montrer que vous êtes actif, vous êtes productif
+Ca, ça va lui plaire
+Voilà, valider les règles métier avant échange, avant changement par ordre réservation, relance email, tout le truc métier doit être validé
+C'est important de garder un historique des décisions
+Ca, ça va être dans l'organisation de projet, envoyer un récap après chaque call
+Donc ça, c'est ce qu'on fait avec les VR V2, livré avec le guide d'utilisation
+Donc là, je ne l'ai pas fait, mais vous pouvez très bien expliquer rapidement le fonctionnement de comment l'utiliser
+Préparer la livraison comme un moment commercial
+Donc là, la valeur, on l'apporte grâce à notre présentation
+Et en plus, grâce à un test réel, c'est pas on lui fait une vidéo lourde, on lui clique sur les boutons
+Ou c'est pas intéressant, non, c'est lui qui va le tester vraiment
+Ca, c'est important aussi
+Je trouve que pour une V1, c'est le top du top
+Le client, il a acheté un produit, il a envie de le tester
+Il a envie que ce soit lui qui fasse le test directement
+Et ensuite, dès que vous avez fini, du coup, le projet va falloir faire une suite sans forcer
+Moi, j'aime bien laisser 4-5 jours, histoire qu'il prenne en moi un petit peu le produit
+Qui commence à l'utiliser constamment
+Et après, je vais dire, Hello Jamy, j'ai point ça à 3
+Hello Hugo, j'ai point ça à 3
+Je pense que ça peut être intéressant de mettre ça en place
+Dis-moi ce que t'en penses
+Il va répondre non, probablement, parce que ça fait que 5 jours
+Mais au moins, on lui laisse le temps
+Pour qu'il met de réfléchir sur notre demande
+Et revenir vers nous par la suite
+Et après, il faut toujours aussi organiser son projet, c'est très important
+Dans mon dossier
+Lucas
+Maison
+Lucas
+Carton
+Que me faut
+Mince
+Trois dossiers
+C'est comme ça que je fais
+Présentation
+Audit slash
+Cadrage
+Slash
+V1
+V2
+V3
+Ensuite, un dossier
+Call
+Donc ça c'est
+Les mythes que vous faites avec votre client
+Un autre dossier
+Projet
+Très bien
+Présentation
+Audit
+Cadrage
+V1
+V2
+V3
+V4
+V5
+V6
+V7
+V8
+Très bien
+Présentation
+V3
+V2
+V1
+V3
+V2
+V3
+V2
+V1
+V2
+V3
+Voilà à quoi ressemble une bonne organisation d'un projet
+Je vous ai donné vraiment des tips que j'utilise constamment
+C'est des tips
+Qui fonctionnent
+J'ai jamais eu de problèmes
+A part avant avec mes clients
+Donc
+Utiliser
+Légèrement parce que ça va vous faciliter la tâche
+Si vous partez dans tous les sens
+Moi j'ai un peu l'habitude aussi
+De être désorganisé mais depuis que j'ai une structure
+Qui est bien posée
+C'est bien plus simple pour moi
+De gérer 10 projets en même temps
+Donc là je pourrais très bien
+Juste dans ce dossier là
+Ouvrir une session
+On sait qu'à l'intérieur
+C'est organisé comme ça
+Je pourrais ouvrir mon deuxième client ici
+Mon troisième, mon quatrième, mon cinquième, mon septième
+Juste avec un dossier piloté
+Du coup tous mes clients maintenant
+Juste avec un terminal chacun
+Voilà, en tout cas j'espère que ça vous a plu
+Je vous détaillerai un petit peu plus
+Tous les tips comment bien les utiliser
+Mais cette séance
+C'est très importante
+Donc je vous remercie et à tout de suite pour
+Le projet du coup
+À réaliser pour le client

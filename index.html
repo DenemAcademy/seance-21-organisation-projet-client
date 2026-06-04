@@ -1,0 +1,2042 @@
+<!doctype html>
+<html lang="fr" id="top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DENEM Academy · Séance 21 · Organisation projet-client</title>
+<meta name="description" content="Support séance 21 : organiser un projet client IA, relancer, cadrer, livrer une V1, transformer les retours en checklist et gérer plusieurs clients.">
+<link rel="icon" href="logo-denem.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&family=Space+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111827;--muted:#475569;--line:#111827;--blue:#2563eb;--violet:#7c3aed;--cyan:#06b6d4;--green:#16a34a;--amber:#f59e0b;--red:#dc2626;--paper:#fff;--soft:#f8fafc;--mint:#dcfce7;--lav:#ede9fe;--sky:#e0f2fe;--rose:#fee2e2;--cream:#fff7ed;--shadow:7px 7px 0 #111827;--shadow-sm:4px 4px 0 #111827}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,sans-serif;letter-spacing:0;overflow-x:hidden}::selection{background:#bae6fd;color:#111827}a{color:inherit}.progress{position:fixed;top:0;left:0;right:0;height:6px;background:#e5e7eb;z-index:100}.progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan),var(--green))}.topbar{position:sticky;top:6px;z-index:90;background:rgba(255,255,255,.96);border-bottom:2px solid var(--line);backdrop-filter:blur(10px)}.topbar-inner{max-width:1220px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{display:flex;gap:12px;align-items:center;text-decoration:none}.brand img{width:42px;height:42px;object-fit:cover;border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow-sm)}.brand b{display:block;font-family:"Space Grotesk",Inter,sans-serif;font-size:18px}.brand small{display:block;font:900 11px/1.2 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-top:3px}.navlinks{display:flex;gap:8px;flex-wrap:wrap}.navlinks a,.badge,.copy-btn,.hero-link{border:2px solid var(--line);border-radius:6px;box-shadow:var(--shadow-sm);background:#fff;padding:8px 10px;text-decoration:none;font:900 11px/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em}.navlinks a:hover{background:var(--blue);color:#fff}.hero{position:relative;overflow:hidden;border-bottom:2px solid var(--line);background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)}.hero:before,.support-section:nth-child(odd):before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(37,99,235,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(124,58,237,.06) 1px,transparent 1px);background-size:34px 34px;pointer-events:none}.hero-wrap{position:relative;max-width:1220px;margin:auto;padding:70px 20px 56px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.eyebrow{display:inline-flex;border:2px solid var(--line);border-radius:6px;background:var(--blue);color:#fff;box-shadow:var(--shadow-sm);padding:10px 14px;font:900 12px/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.16em}h1{font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(46px,7.4vw,94px);line-height:.92;margin:24px 0 18px;letter-spacing:0}h1 span{color:var(--blue)}.hero p{font-size:20px;line-height:1.72;color:var(--muted);max-width:760px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.hero-link.primary{background:var(--ink);color:#fff}.hero-card{border:2px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow);padding:18px}.logo-wrap{display:grid;place-items:center;min-height:290px;background:linear-gradient(135deg,var(--sky),#fff,var(--lav));border:2px solid var(--line);border-radius:8px}.logo-wrap img{width:138px;height:138px;object-fit:cover;border:2px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.stat{border:2px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow-sm);padding:14px}.stat:nth-child(1){background:var(--blue);color:#fff}.stat:nth-child(2){background:var(--mint)}.stat:nth-child(3){background:var(--cream)}.stat b{display:block;font-size:30px;line-height:1}.stat span{font:900 11px/1.3 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.1em}.toc{max-width:1220px;margin:auto;padding:28px 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.toc a{display:block;min-height:142px;text-decoration:none;border:2px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow-sm);padding:16px}.toc a:nth-child(2n){background:var(--sky)}.toc a:nth-child(3n){background:var(--lav)}.toc a:nth-child(5n){background:var(--cream)}.toc span{font:900 11px/1 "JetBrains Mono",monospace;text-transform:uppercase;color:var(--blue);letter-spacing:.14em}.toc b{display:block;margin-top:10px;font-size:22px;line-height:1.1}.toc p{color:var(--muted);font-size:14px;line-height:1.55;margin:10px 0 0}.support-section{position:relative;border-top:2px solid var(--line);scroll-margin-top:92px}.tone-1{background:#fff}.tone-2{background:#f8fafc}.tone-3{background:#eff6ff}.tone-4{background:#f5f3ff}.tone-5{background:#f0fdfa}.tone-6{background:#fff7ed}.wrap{position:relative;max-width:1220px;margin:auto;padding:58px 20px;display:grid;gap:28px;align-items:start}.layout-opener .wrap{grid-template-columns:150px 1fr 360px;align-items:center}.layout-story .wrap,.layout-check .wrap,.layout-compare .wrap,.layout-diagnostic .wrap,.layout-prompt .wrap,.layout-matrix .wrap{grid-template-columns:.95fr 1.05fr}.layout-quote .wrap{grid-template-columns:.78fr 1.22fr;align-items:stretch}.layout-cards .wrap,.layout-wide .wrap,.layout-timeline .wrap,.layout-flow .wrap{grid-template-columns:1fr}.section-head{background:#fff;border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);padding:26px}.layout-wide .section-head,.layout-cards .section-head,.layout-timeline .section-head,.layout-flow .section-head{max-width:900px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.badge{display:inline-flex;width:max-content;box-shadow:var(--shadow-sm);padding:7px 9px}.badge.num{background:var(--blue);color:#fff}.badge.label{background:var(--lav);color:var(--ink)}.badge.time{background:var(--ink);color:#fff}.section-head h2{font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(31px,4.7vw,58px);line-height:1;margin:0;letter-spacing:0}.section-head p,.opener-side p,.cards p,.checklist p,.timeline p,.matrix p,.diagnostic p,.before-after p,.flow+ .cards p{color:var(--muted);line-height:1.7}.section-head p{font-size:18px;margin:18px 0 0}.big-index{font:900 clamp(76px,11vw,150px)/.8 "Space Grotesk",Inter,sans-serif;color:var(--blue);text-shadow:4px 4px 0 var(--line)}.opener-side{border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);background:var(--ink);color:#fff;padding:22px}.opener-side b{font-size:24px}.opener-side p{color:#dbeafe}.act-line{font-weight:900;color:var(--blue)!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cards article,.visual-card,.diagnostic div,.matrix div,.before-after div,.checklist li,.timeline li{border:2px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow-sm);padding:18px}.cards article:nth-child(1),.matrix div:nth-child(2),.before-after div:nth-child(2){background:var(--mint)}.cards article:nth-child(2),.matrix div:nth-child(4){background:var(--sky)}.cards article:nth-child(3),.matrix div:nth-child(3),.before-after div:nth-child(1){background:var(--rose)}.cards b,.diagnostic b,.matrix b,.checklist b,.timeline b{display:block;margin-bottom:8px;color:var(--ink)}.checklist,.timeline{list-style:none;margin:0;padding:0;display:grid;gap:14px}.checklist li,.timeline li{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start}.checklist span,.timeline span{display:grid;place-items:center;width:42px;height:42px;border:2px solid var(--line);border-radius:8px;background:var(--blue);color:#fff;font:900 13px/1 "JetBrains Mono",monospace}.before-after{display:grid;grid-template-columns:1fr 1fr;gap:14px}.before-after span{font:900 12px/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em}.diagnostic,.matrix{display:grid;gap:14px}.matrix{grid-template-columns:repeat(2,1fr)}.visual-card{background:linear-gradient(135deg,var(--ink),#1e293b);color:#fff;min-height:330px;display:flex;flex-direction:column;justify-content:space-between}.visual-index{font:900 90px/.85 "Space Grotesk",Inter,sans-serif;color:#93c5fd;text-shadow:3px 3px 0 #000}.visual-kicker{font:900 12px/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.14em;color:#bae6fd}.mini-flow{display:grid;gap:10px}.mini-flow span,.flow span{border:2px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);padding:10px 12px;font-weight:850;font-size:13px}.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.flow span{background:var(--sky)}.flow span:nth-child(2n){background:var(--mint)}.table-wrap{border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);background:#fff;overflow:auto}table{border-collapse:collapse;width:100%;min-width:760px}th,td{padding:14px 16px;border-bottom:1px solid #cbd5e1;text-align:left;vertical-align:top;line-height:1.55}th{background:var(--ink);color:#fff;font:900 12px/1.2 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em}td:first-child{font-weight:900;color:var(--blue)}.prompt-panel{border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);background:#0f172a;color:#f8fafc;overflow:hidden}.prompt-head{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:2px solid rgba(255,255,255,.18);background:#111827;padding:12px 14px}.prompt-head span{font:900 12px/1 "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.14em;color:#67e8f9}.copy-btn{cursor:pointer}.copy-btn.copied{background:#bbf7d0;color:#111827}.prompt-panel pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;max-height:680px;overflow:auto;padding:20px;font:650 13px/1.68 "JetBrains Mono",monospace}.prompt-copy{display:grid;gap:20px}blockquote{margin:0;border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);background:var(--ink);color:#fff;padding:30px;display:flex;flex-direction:column;justify-content:space-between}blockquote span{font:900 clamp(56px,8vw,110px)/.8 "Space Grotesk",Inter,sans-serif;color:#93c5fd}blockquote p{font-size:clamp(22px,3vw,36px);line-height:1.25;margin:22px 0 0}.tree{border:2px solid var(--line);border-radius:8px;box-shadow:var(--shadow);background:#111827;color:#f8fafc;overflow:auto}.tree pre{margin:0;padding:24px;font:800 15px/1.72 "JetBrains Mono",monospace}.footer{border-top:2px solid var(--line);background:var(--ink);color:#fff}.footer .wrap{padding:36px 20px}.footer p{margin:0;color:#cbd5e1;line-height:1.7}.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal.visible{opacity:1;transform:none}.section-counter{position:fixed;right:14px;bottom:14px;z-index:80;border:2px solid var(--line);border-radius:6px;background:#fff;box-shadow:var(--shadow-sm);padding:8px 10px;font:900 11px/1 "JetBrains Mono",monospace}
+@media(max-width:980px){.topbar-inner{align-items:flex-start;flex-direction:column}.hero-wrap,.layout-opener .wrap,.layout-story .wrap,.layout-check .wrap,.layout-compare .wrap,.layout-diagnostic .wrap,.layout-prompt .wrap,.layout-matrix .wrap,.layout-quote .wrap{grid-template-columns:1fr}.toc{grid-template-columns:repeat(2,1fr)}.cards,.stats{grid-template-columns:1fr}.big-index{font-size:84px}.before-after,.matrix{grid-template-columns:1fr}.visual-card{min-height:auto}.visual-index{font-size:72px}}
+@media(max-width:620px){.navlinks{display:none}.hero-wrap,.wrap{padding-left:14px;padding-right:14px}.hero-wrap{padding-top:46px}.toc{grid-template-columns:1fr;padding-left:14px;padding-right:14px}h1{font-size:clamp(40px,13vw,58px);line-height:1.02}.hero p,.section-head p{font-size:16px}.section-head{padding:22px}.cards article,.visual-card,.diagnostic div,.matrix div,.before-after div,.checklist li,.timeline li{padding:15px}.checklist li,.timeline li{grid-template-columns:1fr}.prompt-panel pre{font-size:12px;padding:15px}table,thead,tbody,tr,th,td{display:block;width:100%;min-width:0}thead{display:none}tr{border-bottom:2px solid var(--line)}td{border-bottom:0}.section-counter{display:none}}
+</style>
+</head>
+<body>
+<div class="progress"><span id="progress"></span></div>
+<div class="section-counter" id="counter">01 / 80</div>
+<nav class="topbar"><div class="topbar-inner"><a class="brand" href="#top"><img src="logo-denem.jpeg" alt="DENEM Academy"><span><b>DENEM Academy</b><small>Séance 21 · Organisation projet-client</small></span></a><div class="navlinks"><a href="#section-01">Rythme</a><a href="#section-11">Cadrage</a><a href="#section-31">V1</a><a href="#section-51">Tests</a><a href="#section-71">Dossier</a></div></div></nav>
+<header class="hero"><div class="hero-wrap"><div><span class="eyebrow">Séance 21 · Tips terrain</span><h1>Organiser un projet-client <span>comme un système IA.</span></h1><p>Je pars d'un client signé. Je garde le rythme, je cadre le périmètre, je transforme les retours en checklist, je fais travailler Codex proprement et je livre avec une expérience client claire.</p><div class="hero-actions"><a class="hero-link primary" href="#section-01">Commencer</a><a class="hero-link" href="transcription/seance-21-organisation-projet-client-transcription.md">Transcription</a><a class="hero-link" href="transcription/seance-21-organisation-projet-client-moments-importants.md">Moments importants</a></div></div><aside class="hero-card"><div class="logo-wrap"><img src="logo-denem.jpeg" alt="Logo DENEM"></div><div class="stats"><div class="stat"><b>80</b><span>sections</span></div><div class="stat"><b>23</b><span>tips projet</span></div><div class="stat"><b>10</b><span>prompts et messages</span></div></div></aside></div></header>
+<section class="toc" aria-label="Sommaire"><a href="#section-01"><span>Acte 01 · sections 01-10</span><b>Installer le rythme</b><p>Je pose les réflexes qui rassurent dès le départ.</p></a>
+<a href="#section-11"><span>Acte 02 · sections 11-20</span><b>Cadrer sans subir</b><p>Je transforme l&#x27;audit en cadrage lisible et facturable.</p></a>
+<a href="#section-21"><span>Acte 03 · sections 21-30</span><b>Communiquer court</b><p>Je fais avancer le client sans écrire des romans.</p></a>
+<a href="#section-31"><span>Acte 04 · sections 31-40</span><b>Livrer une V1</b><p>Je récupère les retours avant de perdre deux semaines.</p></a>
+<a href="#section-41"><span>Acte 05 · sections 41-50</span><b>Transformer les retours</b><p>Je donne à Codex une matière propre à exécuter.</p></a>
+<a href="#section-51"><span>Acte 06 · sections 51-60</span><b>Prouver l&#x27;avancement</b><p>Je montre le résultat sans noyer le client dans la technique.</p></a>
+<a href="#section-61"><span>Acte 07 · sections 61-70</span><b>Livrer et vendre la suite</b><p>Je fais de la livraison un moment commercial.</p></a>
+<a href="#section-71"><span>Acte 08 · sections 71-80</span><b>Scaler l&#x27;organisation</b><p>Je peux gérer plusieurs clients parce que tout est rangé.</p></a></section>
+<main><section id="section-01" class="support-section tone-1 layout-opener"><div class="wrap reveal">
+        <div class="big-index">01</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">01</span>
+        <span class="badge label">Départ</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">00:00</span>
+      </div>
+      <h2>Je ne fais pas une séance théorique : je pose une méthode de pilotage</h2>
+      <p>La séance 21 explique comment je m&#x27;organise après la signature d&#x27;un client. Le but est simple : livrer vite, garder le client rassuré, ne pas perdre le périmètre et préparer la suite.</p>
+    </div>
+    
+          <p class="act-line">Du prospect signé au client suivi</p>
+        </div>
+        <div class="opener-side">
+          <b>Installer le rythme</b>
+          <p>Je pose les réflexes qui rassurent dès le départ.</p>
+          
+    <div class="flow">
+      <span>Départ</span>
+      <span>Identifie le projet signé, le clie</span>
+      <span>Tu peux expliquer le projet en une</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-02" class="support-section tone-2 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">02</span>
+        <span class="badge label">Silence</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">00:25</span>
+      </div>
+      <h2>Le silence crée le doute</h2>
+      <p>Un client sans nouvelles ne sait pas si tu travailles, si tu bloques ou si tu as oublié le projet. Même quand tout avance, le silence abîme la confiance.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Prévois une relance ou un point court tous les 3 jours.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sait où en est le projet sans devoir te courir après.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le client commence à douter, puis chaque petit retard paraît plus grave.</p></article>
+    </div>
+    </div></section>
+<section id="section-03" class="support-section tone-3 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">03</span>
+        <span class="badge label">Client</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">00:54</span>
+      </div>
+      <h2>Le prospect devient un client</h2>
+      <p>Après la signature, la posture change. Je ne suis plus en train de convaincre, je suis en train de piloter une livraison.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Tu continues à parler comme en prospection et tu oublies le suivi réel.</p></div>
+      <div><span>Après</span><p>Tes messages parlent d&#x27;avancement concret et de prochaine action.</p></div>
+    </div>
+    </div></section>
+<section id="section-04" class="support-section tone-4 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">04</span>
+        <span class="badge label">Visibilité</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">01:02</span>
+      </div>
+      <h2>Le projet doit être visible</h2>
+      <p>Le client doit voir ce qui avance. Un lien seul ne suffit pas toujours : il faut une explication, une présentation ou une preuve.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">04</div>
+      <p class="visual-kicker">Visibilité</p>
+      <div class="mini-flow">
+        <span>Associe chaque étape à un support visible </span>
+        <span>Le client comprend ce que tu as fait et ce</span>
+        <span>Tu fais du bon travail, mais le client ne </span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Associe chaque étape à un support visible : cadrage, V1, V2, livraison.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le client comprend ce que tu as fait et ce qu&#x27;il doit tester.</p></li>
+      <li><span>03</span><p><b>Attention</b>Tu fais du bon travail, mais le client ne le perçoit pas.</p></li>
+    </ul>
+    </div></section>
+<section id="section-05" class="support-section tone-5 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">05</span>
+        <span class="badge label">Valeur</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">01:29</span>
+      </div>
+      <h2>Je valorise mon travail tout le temps</h2>
+      <p>Quand je livre quelque chose, je l&#x27;assume. Si je doute de ce que j&#x27;envoie, le client le sent.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Quand je livre quelque chose, je l&#x27;assume. Si je doute de ce que j&#x27;envoie, le client le sent.</p></li>
+      <li><span>2</span><p><b>Faire</b>Présente le résultat comme une avancée claire, pas comme une version timide.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Le client ressent que tu maîtrises le sujet.</p></li>
+    </ol>
+    </div></section>
+<section id="section-06" class="support-section tone-6 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">06</span>
+        <span class="badge label">Boucle</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">01:55</span>
+      </div>
+      <h2>La boucle projet reste toujours la même</h2>
+      <p>Audit, cadrage, V1, retours, V2, tests, livraison. Cette boucle évite les projets qui partent dans tous les sens.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Audit, cadrage, V1, retours, V2, tests, livraison. Cette boucle évite les projets qui partent dans tous les sens.</p></div>
+      <div><b>À faire</b><p>Place chaque action dans une étape de la boucle.</p></div>
+      <div><b>À éviter</b><p>Tu mélanges retours, nouvelles demandes et corrections.</p></div>
+      <div><b>Résultat</b><p>Tu sais si tu es en cadrage, en build, en correction ou en livraison.</p></div>
+    </div>
+    </div></section>
+<section id="section-07" class="support-section tone-1 layout-quote"><div class="wrap reveal"><blockquote><span>07</span><p>Le client comprend à quoi le produit va ressembler.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">07</span>
+        <span class="badge label">V1</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">02:24</span>
+      </div>
+      <h2>La V1 sert à se projeter</h2>
+      <p>La V1 n&#x27;est pas la livraison finale. Elle permet au client de voir la direction et de donner des retours avant qu&#x27;il soit trop tard.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Livre une V1 testable rapidement, même si elle n&#x27;est pas parfaite.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client comprend à quoi le produit va ressembler.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu attends trop longtemps et tu découvres un décalage énorme.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-08" class="support-section tone-2 layout-diagnostic"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">08</span>
+        <span class="badge label">Itérations</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">02:48</span>
+      </div>
+      <h2>V3, V4, V5 : seulement si le projet le justifie</h2>
+      <p>Améliorer oui. Laisser une demande hors périmètre créer une V10 non facturée, non.</p>
+    </div>
+    </div>
+    <div class="diagnostic">
+      <div><b>Signal</b><p>Améliorer oui. Laisser une demande hors périmètre créer une V10 non facturée, non.</p></div>
+      <div><b>Premier réflexe</b><p>Définis combien de cycles sont inclus selon le budget et le périmètre.</p></div>
+      <div><b>Décision</b><p>Tu sais dire stop sans fermer la porte.</p></div>
+    </div>
+    </div></section>
+<section id="section-09" class="support-section tone-3 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">09</span>
+        <span class="badge label">Cadence</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">03:22</span>
+      </div>
+      <h2>Je relance tous les 3 jours</h2>
+      <p>Le rythme protège le projet. Je ne laisse pas une V1 dormir parce qu&#x27;un client ne répond pas.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Cadence</span>
+      <span>Planifie les relances dès l&#x27;envoi </span>
+      <span>Tu as une trace de chaque relance </span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Planifie les relances dès l&#x27;envoi de la V1.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu as une trace de chaque relance et une date de prochaine action.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le projet traîne 2 ou 3 mois alors qu&#x27;il pouvait finir vite.</p></article>
+    </div>
+    </div></section>
+<section id="section-10" class="support-section tone-4 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">10</span>
+        <span class="badge label">Carte</span>
+        <span class="badge ">Installer le rythme</span>
+        <span class="badge time">04:02</span>
+      </div>
+      <h2>Les 23 tips forment une carte de pilotage</h2>
+      <p>Ces conseils ne sont pas décoratifs. Ils servent à gagner du temps, éviter les malentendus, protéger la marge et créer une expérience client professionnelle.</p>
+    </div>
+    
+    <div class="table-wrap tips-table">
+      <table>
+        <thead><tr><th>#</th><th>Tip</th><th>Utilité terrain</th></tr></thead>
+        <tbody><tr><td>01</td><td><strong>Relancer tous les 3 jours</strong></td><td>Je ne laisse pas un retour client bloquer le projet pendant deux semaines.</td></tr>
+<tr><td>02</td><td><strong>Ne jamais disparaître</strong></td><td>Un retard s&#x27;explique. Un silence crée du doute.</td></tr>
+<tr><td>03</td><td><strong>Répondre en moins de 24 h</strong></td><td>Même si je n&#x27;ai pas la réponse finale, je confirme que j&#x27;ai vu le message.</td></tr>
+<tr><td>04</td><td><strong>Annoncer la prochaine étape</strong></td><td>Chaque mail se termine par la suite : V1, test, call, V2, livraison.</td></tr>
+<tr><td>05</td><td><strong>Créer une présentation dès le début</strong></td><td>La présentation devient le fil rouge du projet.</td></tr>
+<tr><td>06</td><td><strong>Reprendre le design de l&#x27;audit</strong></td><td>Je garde une expérience client cohérente et premium.</td></tr>
+<tr><td>07</td><td><strong>Cadrer ce que le client valide</strong></td><td>Je ne demande pas un avis vague, je demande une validation précise.</td></tr>
+<tr><td>08</td><td><strong>Limiter les choix</strong></td><td>Je recommande une option claire au lieu de demander 20 préférences.</td></tr>
+<tr><td>09</td><td><strong>Demander les accès tôt</strong></td><td>Pas de build sérieux sans clés, comptes ou décisions utiles.</td></tr>
+<tr><td>10</td><td><strong>Ne pas attendre les clés API</strong></td><td>Si les accès bloquent, je relance fort ou je propose de gérer.</td></tr>
+<tr><td>11</td><td><strong>Refacturer les outils</strong></td><td>OpenAI, Supabase ou maintenance doivent être assumés dans le prix.</td></tr>
+<tr><td>12</td><td><strong>Faire une V1 en 4-5 jours</strong></td><td>La V1 sert à apprendre vite, pas à impressionner trop tard.</td></tr>
+<tr><td>13</td><td><strong>V1 testable, pas parfaite</strong></td><td>Le client doit pouvoir essayer le produit rapidement.</td></tr>
+<tr><td>14</td><td><strong>Transformer les retours en checklist</strong></td><td>Un retour flou devient une tâche claire.</td></tr>
+<tr><td>15</td><td><strong>Utiliser Fireflies à chaque call</strong></td><td>Je garde la mémoire brute de chaque échange.</td></tr>
+<tr><td>16</td><td><strong>Ne jamais corriger sans noter</strong></td><td>Une correction non tracée disparaît du pilotage.</td></tr>
+<tr><td>17</td><td><strong>Protéger le périmètre</strong></td><td>Une idée hors scope va en évolution future ou en devis.</td></tr>
+<tr><td>18</td><td><strong>Classer les retours</strong></td><td>Bug, amélioration, nouvelle demande : la réponse change.</td></tr>
+<tr><td>19</td><td><strong>Ne pas parler technique</strong></td><td>Je traduis MCP, API et base de données en bénéfice client.</td></tr>
+<tr><td>20</td><td><strong>Montrer l&#x27;avancement visuel</strong></td><td>Screenshots, page V1, preuves de test : le client voit.</td></tr>
+<tr><td>21</td><td><strong>Tester chaque tâche</strong></td><td>Chaque correction doit avoir une preuve de fonctionnement.</td></tr>
+<tr><td>22</td><td><strong>Livrer avec guide</strong></td><td>Le client sait utiliser, tester et éviter les erreurs.</td></tr>
+<tr><td>23</td><td><strong>Organiser le dossier</strong></td><td>Un dossier clair permet de gérer plusieurs clients en parallèle.</td></tr></tbody>
+      </table>
+    </div>
+    </div></section>
+<section id="section-11" class="support-section tone-5 layout-opener"><div class="wrap reveal">
+        <div class="big-index">02</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">11</span>
+        <span class="badge label">Cadrage</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">07:26</span>
+      </div>
+      <h2>Je crée une présentation projet dès le début</h2>
+      <p>La plupart des gens envoient juste un mail. Je crée une page de cadrage qui sert au client et à mon dossier.</p>
+    </div>
+    
+          <p class="act-line">Le client peut demander plus, mais je garde la roadmap</p>
+        </div>
+        <div class="opener-side">
+          <b>Cadrer sans subir</b>
+          <p>Je transforme l&#x27;audit en cadrage lisible et facturable.</p>
+          
+    <div class="flow">
+      <span>Cadrage</span>
+      <span>Transforme l&#x27;audit signé en page d</span>
+      <span>Le client voit le périmètre, le pl</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-12" class="support-section tone-6 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">12</span>
+        <span class="badge label">Roadmap</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">06:51</span>
+      </div>
+      <h2>C&#x27;est moi qui drive le projet</h2>
+      <p>Le client ne connaît pas toujours la meilleure roadmap. Je l&#x27;écoute, mais je garde la direction.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Réponds aux demandes avec une recommandation, pas avec 20 questions ouvertes.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sait quoi valider et pourquoi.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu deviens exécutant passif au lieu de chef de projet.</p></article>
+    </div>
+    </div></section>
+<section id="section-13" class="support-section tone-1 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">13</span>
+        <span class="badge label">Périmètre</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">02:01</span>
+      </div>
+      <h2>Le client voudra souvent plus</h2>
+      <p>La demande de départ peut grossir. C&#x27;est normal. Le danger, c&#x27;est d&#x27;intégrer chaque idée comme si elle était incluse.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Tu offres une journée sans t&#x27;en rendre compte.</p></div>
+      <div><span>Après</span><p>Chaque demande supplémentaire a une place claire.</p></div>
+    </div>
+    </div></section>
+<section id="section-14" class="support-section tone-2 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">14</span>
+        <span class="badge label">Signature</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">08:33</span>
+      </div>
+      <h2>Après signature, je demande à Codex de cadrer</h2>
+      <p>Dans la vidéo, je demande à Codex de comprendre l&#x27;audit, de créer une page de cadrage et de reprendre le design de l&#x27;audit.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Colle un prompt de cadrage dans le dossier client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La page obtenue est prête à être relue, ajustée puis envoyée.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu recommences une présentation à zéro alors que l&#x27;audit contient déjà le contexte.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Prompt à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Comprends l&#x27;audit du client.
+Le client a signé.
+
+J&#x27;ai besoin que tu me fasses une nouvelle page GitHub pour la partie cadrage + planning.
+
+Objectif :
+- reprendre le design de la présentation d&#x27;audit
+- expliquer le périmètre validé
+- afficher le planning sur [DURÉE_DU_PROJET]
+- préciser les accès à récupérer
+- préciser ce qui est inclus et ce qui n&#x27;est pas inclus
+- écrire de manière naturelle, claire et professionnelle
+
+Contraintes :
+- ne parle pas trop technique
+- montre la valeur pour le client
+- garde une structure simple à envoyer
+- prépare une section &quot;prochaine étape&quot;
+
+Résultat attendu :
+- une page de cadrage publiable
+- un mail court d&#x27;envoi au client
+- une checklist interne avant de commencer le build</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-15" class="support-section tone-3 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">15</span>
+        <span class="badge label">Mémoire</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">09:49</span>
+      </div>
+      <h2>La présentation enrichit aussi Codex</h2>
+      <p>La page de cadrage n&#x27;est pas seulement faite pour le client. Elle devient une mémoire structurée pour l&#x27;agent IA.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>La page de cadrage n&#x27;est pas seulement faite pour le client. Elle devient une mémoire structurée pour l&#x27;agent IA.</p></li>
+      <li><span>2</span><p><b>Faire</b>Garde la présentation dans le dossier client avec les autres livrables.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Codex retrouve le périmètre, les deadlines et les décisions.</p></li>
+    </ol>
+    </div></section>
+<section id="section-16" class="support-section tone-4 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">16</span>
+        <span class="badge label">Univers</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">10:40</span>
+      </div>
+      <h2>Je fais entrer le client dans un univers</h2>
+      <p>Reprendre le design de l&#x27;audit crée une continuité. Le client n&#x27;a pas l&#x27;impression de recevoir un document bricolé.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Reprendre le design de l&#x27;audit crée une continuité. Le client n&#x27;a pas l&#x27;impression de recevoir un document bricolé.</p></div>
+      <div><b>À faire</b><p>Garde un style visuel cohérent entre audit, cadrage, V1 et livraison.</p></div>
+      <div><b>À éviter</b><p>Chaque étape ressemble à un fichier isolé.</p></div>
+      <div><b>Résultat</b><p>Le client reconnaît la qualité du suivi.</p></div>
+    </div>
+    </div></section>
+<section id="section-17" class="support-section tone-5 layout-quote"><div class="wrap reveal"><blockquote><span>17</span><p>Tu sais pourquoi tu acceptes ou refuses.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">17</span>
+        <span class="badge label">Erreur</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">12:31</span>
+      </div>
+      <h2>Une petite mission offerte peut coûter une journée</h2>
+      <p>Je donne un exemple concret : tout fonctionnait, puis le client a ajouté une mission. Sans cadrage, je ne l&#x27;ai pas facturée.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Décide consciemment si tu offres, factures ou repousses une demande.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu sais pourquoi tu acceptes ou refuses.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu subis des ajouts en pensant que ce sont de petites corrections.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-18" class="support-section tone-6 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">18</span>
+        <span class="badge label">Facturer</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">13:03</span>
+      </div>
+      <h2>Je peux être cash et professionnel</h2>
+      <p>Dire non ne veut pas dire créer un conflit. Je rappelle le cadrage, j&#x27;estime le temps et je propose un ajout.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Envoie un message clair avec durée, montant et choix client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client comprend que le temps supplémentaire a une valeur.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu intègres la demande gratuitement et tu crées un précédent.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Message à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Hello [PRENOM],
+
+Oui, c&#x27;est possible.
+
+Par contre, ce point n&#x27;était pas prévu dans le cadrage validé.
+Pour le traiter proprement, j&#x27;estime environ [NOMBRE_JOURS] jours de travail.
+
+Je peux te le proposer en ajout au projet pour [MONTANT] €.
+
+Dis-moi si tu veux que je l&#x27;intègre maintenant, ou si tu préfères qu&#x27;on le garde dans les évolutions futures après la V1.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-19" class="support-section tone-1 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">19</span>
+        <span class="badge label">Choix</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">13:31</span>
+      </div>
+      <h2>Je ne donne pas 20 choix au client</h2>
+      <p>Ton amical, vouvoiement, tutoiement, réponse courte : si je demande tout, je crée de la confusion. Je recommande une direction.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Choix</span>
+      <span>Propose une option conseillée et d</span>
+      <span>Le client valide vite ou corrige u</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Propose une option conseillée et demande validation sur cette option.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client valide vite ou corrige un point précis.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu crées des allers-retours inutiles.</p></article>
+    </div>
+    </div></section>
+<section id="section-20" class="support-section tone-2 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">20</span>
+        <span class="badge label">Validation</span>
+        <span class="badge ">Cadrer sans subir</span>
+        <span class="badge time">21:31</span>
+      </div>
+      <h2>Le client doit valider des points précis</h2>
+      <p>Demander &#x27;tu en penses quoi ?&#x27; donne souvent un retour flou. Je dois demander ce qui doit être validé.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Liste 3 à 5 points de validation maximum.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client répond sur le design, le parcours, le ton ou la règle métier.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu reçois un avis vague impossible à transformer en V2.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">20</div>
+      <p class="visual-kicker">Validation</p>
+      <div class="mini-flow">
+        <span>Liste 3 à 5 points de validation maximum.</span>
+        <span>Le client répond sur le design, le parcour</span>
+        <span>Tu reçois un avis vague impossible à trans</span>
+      </div>
+    </aside>
+    </div></section>
+<section id="section-21" class="support-section tone-3 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">21</span>
+        <span class="badge label">Relance</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">04:14</span>
+      </div>
+      <h2>Je relance même si je n&#x27;ai rien de nouveau</h2>
+      <p>Après une V1 envoyée lundi, je ne patiente pas trois semaines. Mercredi je relance. Samedi je peux relancer encore.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Prépare un message de relance simple avec les points attendus.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client comprend que son retour débloque la suite.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le projet dépend du rythme du client.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Message à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Hello [PRENOM],
+
+Je te relance sur la V1 envoyée [JOUR].
+
+J&#x27;ai besoin de ton retour sur ces 3 points :
+1. Est-ce que le parcours principal fonctionne comme tu l&#x27;imaginais ?
+2. Est-ce que le ton / design / logique métier te convient ?
+3. Est-ce qu&#x27;il y a un point bloquant avant que je prépare la V2 ?
+
+Dès que j&#x27;ai ton retour, je transforme ça en checklist et je lance les corrections.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-22" class="support-section tone-4 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">22</span>
+        <span class="badge label">Copie</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">05:31</span>
+      </div>
+      <h2>Je mets la bonne personne en copie si besoin</h2>
+      <p>Dans les grosses structures, tu peux travailler avec un niveau intermédiaire. Si ça bloque, le responsable doit voir que tu relances.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Ajoute le décideur ou responsable dans les échanges critiques.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La trace protège ton travail si quelqu&#x27;un reproche un retard.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu portes seul un blocage qui ne vient pas de toi.</p></article>
+    </div>
+    </div></section>
+<section id="section-23" class="support-section tone-5 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">23</span>
+        <span class="badge label">24 h</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">06:30</span>
+      </div>
+      <h2>Je réponds en moins de 24 heures</h2>
+      <p>Un délai peut s&#x27;expliquer. Un mail ignoré pendant 4 ou 5 jours, non.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Le client pense que tu as disparu.</p></div>
+      <div><span>Après</span><p>Le client sait que son message est pris en compte.</p></div>
+    </div>
+    </div></section>
+<section id="section-24" class="support-section tone-6 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">24</span>
+        <span class="badge label">Étape</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">06:35</span>
+      </div>
+      <h2>J&#x27;annonce toujours la prochaine étape</h2>
+      <p>Le client doit savoir ce qui arrive après : test, call, V2, livraison, accès, validation.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">24</div>
+      <p class="visual-kicker">Étape</p>
+      <div class="mini-flow">
+        <span>Termine chaque message avec la prochaine a</span>
+        <span>Le projet reste lisible pour lui et pour t</span>
+        <span>Tu dois réexpliquer le plan à chaque échan</span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Termine chaque message avec la prochaine action et la date attendue.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le projet reste lisible pour lui et pour toi.</p></li>
+      <li><span>03</span><p><b>Attention</b>Tu dois réexpliquer le plan à chaque échange.</p></li>
+    </ul>
+    </div></section>
+<section id="section-25" class="support-section tone-1 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">25</span>
+        <span class="badge label">Point court</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">27:09</span>
+      </div>
+      <h2>Je fais des points courts</h2>
+      <p>Pas besoin d&#x27;écrire 200 lignes. Un petit message, la présentation et le lien testable suffisent souvent.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Pas besoin d&#x27;écrire 200 lignes. Un petit message, la présentation et le lien testable suffisent souvent.</p></li>
+      <li><span>2</span><p><b>Faire</b>Structure tes mails en 5 lignes maximum quand le support fait le détail.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Le client lit vraiment le message.</p></li>
+    </ol>
+    </div></section>
+<section id="section-26" class="support-section tone-2 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">26</span>
+        <span class="badge label">Accès</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">15:03</span>
+      </div>
+      <h2>Les accès ne doivent pas bloquer deux semaines</h2>
+      <p>Clés API, Supabase, OpenAI : si les accès tardent, la rentabilité disparaît.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Clés API, Supabase, OpenAI : si les accès tardent, la rentabilité disparaît.</p></div>
+      <div><b>À faire</b><p>Demande les accès dès le cadrage et relance plus vite si c&#x27;est bloquant.</p></div>
+      <div><b>À éviter</b><p>Tu perds deux semaines pour une clé.</p></div>
+      <div><b>Résultat</b><p>Tu peux commencer le build au bon moment.</p></div>
+    </div>
+    </div></section>
+<section id="section-27" class="support-section tone-3 layout-quote"><div class="wrap reveal"><blockquote><span>27</span><p>Le client comprend les coûts mensuels.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">27</span>
+        <span class="badge label">Options comptes</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">15:19</span>
+      </div>
+      <h2>Je choisis qui gère les comptes</h2>
+      <p>Deux options : le client crée ses comptes, ou je les crée et je refacture les coûts et la maintenance.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Présente clairement le modèle choisi.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client comprend les coûts mensuels.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu payes des outils sans les refacturer.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-28" class="support-section tone-4 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">28</span>
+        <span class="badge label">Maintenance</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">18:11</span>
+      </div>
+      <h2>La maintenance peut devenir une offre</h2>
+      <p>Si je gère les comptes et les clés, je peux facturer une maintenance mensuelle.</p>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Situation</th><th>Décision</th><th>Pourquoi</th></tr></thead><tbody><tr><td>Le client est autonome</td><td>Il crée OpenAI, Supabase, hébergement</td><td>Je lui donne la liste et je relance.</td></tr>
+<tr><td>Le client veut aller vite</td><td>Je crée ou gère les comptes</td><td>Je refacture les coûts et la maintenance.</td></tr>
+<tr><td>Les accès bloquent</td><td>Relance tous les 2-3 jours</td><td>Pas de projet rentable si on attend deux semaines.</td></tr>
+<tr><td>Coût mensuel</td><td>Affiché dans le cadrage</td><td>Pas de surprise après livraison.</td></tr></tbody></table></div></div></section>
+<section id="section-29" class="support-section tone-5 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">29</span>
+        <span class="badge label">Lien</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">16:09</span>
+      </div>
+      <h2>Je vérifie le nom et le lien avant envoi</h2>
+      <p>Dans la démo, je repère un lien ou un nom à nettoyer. Ce détail compte avant d&#x27;envoyer au client.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Lien</span>
+      <span>Relis le titre, l&#x27;URL, le nom clie</span>
+      <span>La page envoyée ne contient pas d&#x27;</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Relis le titre, l&#x27;URL, le nom client et les boutons.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La page envoyée ne contient pas d&#x27;erreur visible.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Un détail bête donne une impression brouillon.</p></article>
+    </div>
+    </div></section>
+<section id="section-30" class="support-section tone-6 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">30</span>
+        <span class="badge label">Mail</span>
+        <span class="badge ">Communiquer court</span>
+        <span class="badge time">20:29</span>
+      </div>
+      <h2>Le mail d&#x27;envoi reste simple</h2>
+      <p>La présentation porte le détail. Le mail sert à donner le lien, expliquer le test et demander un retour.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Écris court : lien V1, lien présentation, retour attendu.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sait quoi faire maintenant.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu mélanges explication, demande, technique et lien dans un seul bloc.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Message à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Hello [PRENOM],
+
+J&#x27;espère que tu vas bien.
+
+J&#x27;ai terminé la V1. Tu peux la tester ici :
+[LIEN_V1_TESTABLE]
+
+Je t&#x27;ai aussi préparé une courte présentation pour comprendre ce qui a été fait, ce qu&#x27;il faut tester et les prochaines étapes :
+[LIEN_PRESENTATION_V1]
+
+Dis-moi ce que tu en penses.
+Tu peux m&#x27;envoyer tes retours par mail, ou on peut se prendre un call court si c&#x27;est plus simple.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-31" class="support-section tone-1 layout-opener"><div class="wrap reveal">
+        <div class="big-index">04</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">31</span>
+        <span class="badge label">Acte V1</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">18:25</span>
+      </div>
+      <h2>Je commence le build seulement après validation</h2>
+      <p>Cadrage validé + accès reçus = je peux build. Avant, je risque de construire sur des bases incomplètes.</p>
+    </div>
+    
+          <p class="act-line">Rapide, testable, imparfaite mais utile</p>
+        </div>
+        <div class="opener-side">
+          <b>Livrer une V1</b>
+          <p>Je récupère les retours avant de perdre deux semaines.</p>
+          
+    <div class="flow">
+      <span>Acte V1</span>
+      <span>Ne lance pas une V1 tant que le ca</span>
+      <span>La V1 part d&#x27;une base validée.</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-32" class="support-section tone-2 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">32</span>
+        <span class="badge label">Délai</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">18:37</span>
+      </div>
+      <h2>La V1 ne doit pas prendre 2 ou 3 semaines</h2>
+      <p>Pour une solution simple, 4 ou 5 jours suffisent pour obtenir une première version testable.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Fixe une date de V1 courte dès le cadrage.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu récupères les retours tôt.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu découvres trop tard que le client imaginait autre chose.</p></article>
+    </div>
+    </div></section>
+<section id="section-33" class="support-section tone-3 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">33</span>
+        <span class="badge label">Testable</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">20:17</span>
+      </div>
+      <h2>La V1 doit pouvoir être testée</h2>
+      <p>Le client a acheté un produit. Il a envie de le tester, pas seulement de regarder une vidéo.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Tu reçois des avis abstraits.</p></div>
+      <div><span>Après</span><p>Le client clique, essaye et formule de vrais retours.</p></div>
+    </div>
+    </div></section>
+<section id="section-34" class="support-section tone-4 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">34</span>
+        <span class="badge label">Présentation V1</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">20:23</span>
+      </div>
+      <h2>Je crée une présentation de la solution V1</h2>
+      <p>La présentation explique ce qui a été construit, quoi tester et ce qui viendra ensuite.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">34</div>
+      <p class="visual-kicker">Présentation</p>
+      <div class="mini-flow">
+        <span>Crée une page V1 séparée du cadrage.</span>
+        <span>Le client comprend les progrès sans réunio</span>
+        <span>Le lien produit arrive sans contexte.</span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Crée une page V1 séparée du cadrage.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le client comprend les progrès sans réunion longue.</p></li>
+      <li><span>03</span><p><b>Attention</b>Le lien produit arrive sans contexte.</p></li>
+    </ul>
+    </div></section>
+<section id="section-35" class="support-section tone-5 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">35</span>
+        <span class="badge label">Retour</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">20:35</span>
+      </div>
+      <h2>Je demande un retour exploitable</h2>
+      <p>Le retour doit permettre de construire la V2. Il peut venir par mail ou par call court.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Le retour doit permettre de construire la V2. Il peut venir par mail ou par call court.</p></li>
+      <li><span>2</span><p><b>Faire</b>Demande des retours sur le parcours, le design, le ton et les règles métier.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Les retours deviennent une checklist.</p></li>
+    </ol>
+    </div></section>
+<section id="section-36" class="support-section tone-6 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">36</span>
+        <span class="badge label">V2</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">20:41</span>
+      </div>
+      <h2>La V2 met les modifications en avant</h2>
+      <p>Quand la V2 est terminée, je ne dis pas seulement &#x27;j&#x27;ai corrigé&#x27;. Je montre les points traités.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Quand la V2 est terminée, je ne dis pas seulement &#x27;j&#x27;ai corrigé&#x27;. Je montre les points traités.</p></div>
+      <div><b>À faire</b><p>Présente les modifications client par client, pas seulement les fichiers.</p></div>
+      <div><b>À éviter</b><p>Il pense que ses remarques ont disparu.</p></div>
+      <div><b>Résultat</b><p>Le client voit que ses retours ont été pris en compte.</p></div>
+    </div>
+    </div></section>
+<section id="section-37" class="support-section tone-1 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">37</span>
+        <span class="badge label">Budget</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">21:05</span>
+      </div>
+      <h2>Le nombre d&#x27;itérations dépend du budget</h2>
+      <p>Un gros projet à 30-40k peut justifier plus de versions. Un projet à 8k doit rester cadré.</p>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Type</th><th>Rythme</th><th>Règle</th></tr></thead><tbody><tr><td>Petit projet</td><td>V1 + V2</td><td>Je cherche vite la version testable.</td></tr>
+<tr><td>Projet autour de 8k</td><td>Environ 3 cycles</td><td>Je cadre les modifications et je clôture.</td></tr>
+<tr><td>Infrastructure 30-40k</td><td>Plusieurs versions possibles</td><td>Le budget justifie plus d&#x27;allers-retours.</td></tr>
+<tr><td>Hors périmètre</td><td>Nouvelle phase</td><td>Je propose devis, update ou évolution future.</td></tr></tbody></table></div></div></section>
+<section id="section-38" class="support-section tone-2 layout-diagnostic"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">38</span>
+        <span class="badge label">V2 finale</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">21:47</span>
+      </div>
+      <h2>Je cherche la V2 la plus proche de la dernière version</h2>
+      <p>La V1 sert à apprendre. La V2 doit déjà viser une version presque livrable.</p>
+    </div>
+    </div>
+    <div class="diagnostic">
+      <div><b>Signal</b><p>La V1 sert à apprendre. La V2 doit déjà viser une version presque livrable.</p></div>
+      <div><b>Premier réflexe</b><p>Récupère assez d&#x27;informations pour réduire les prochains allers-retours.</p></div>
+      <div><b>Décision</b><p>La V2 corrige les vrais points bloquants.</p></div>
+    </div>
+    </div></section>
+<section id="section-39" class="support-section tone-3 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">39</span>
+        <span class="badge label">Validation métier</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">29:25</span>
+      </div>
+      <h2>Je valide les règles métier avant changement</h2>
+      <p>Réservation, relance email, ordre de traitement : tout ce qui touche au métier doit être validé.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Validation métier</span>
+      <span>Isoler les règles métier dans une </span>
+      <span>Le client confirme la logique avan</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Isoler les règles métier dans une section à valider.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client confirme la logique avant correction.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu automatises une règle fausse.</p></article>
+    </div>
+    </div></section>
+<section id="section-40" class="support-section tone-4 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">40</span>
+        <span class="badge label">Pack V1</span>
+        <span class="badge ">Livrer une V1</span>
+        <span class="badge time">25:03</span>
+      </div>
+      <h2>Le pack V1 contient trois éléments</h2>
+      <p>Un mail court, une présentation explicative et un lien vers l&#x27;infrastructure testable.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Envoie toujours ces trois pièces ensemble.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client a le contexte, le test et la demande de retour.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Il ne sait pas quoi ouvrir ni quoi regarder.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">40</div>
+      <p class="visual-kicker">Pack</p>
+      <div class="mini-flow">
+        <span>Envoie toujours ces trois pièces ensemble.</span>
+        <span>Le client a le contexte, le test et la dem</span>
+        <span>Il ne sait pas quoi ouvrir ni quoi regarde</span>
+      </div>
+    </aside>
+    </div></section>
+<section id="section-41" class="support-section tone-5 layout-opener"><div class="wrap reveal">
+        <div class="big-index">05</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">41</span>
+        <span class="badge label">Fireflies</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">21:57</span>
+      </div>
+      <h2>J&#x27;utilise Fireflies à chaque call</h2>
+      <p>Chaque call garde une mémoire brute. Je récupère la retranscription pour ne pas perdre le contexte.</p>
+    </div>
+    
+          <p class="act-line">Calls, Fireflies, checklists et décisions</p>
+        </div>
+        <div class="opener-side">
+          <b>Transformer les retours</b>
+          <p>Je donne à Codex une matière propre à exécuter.</p>
+          
+    <div class="flow">
+      <span>Fireflies</span>
+      <span>Télécharge ou copie la transcripti</span>
+      <span>Les décisions et demandes restent </span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-42" class="support-section tone-6 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">42</span>
+        <span class="badge label">Format call</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">23:21</span>
+      </div>
+      <h2>Je garde les calls en texte ou en Markdown</h2>
+      <p>Markdown suffit très bien pour donner du contexte à Codex ou à Claude Code.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Nommer les calls clairement : call-01.md, call-02.md.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu retrouves facilement le bon échange.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu accumules des fichiers mal nommés.</p></article>
+    </div>
+    </div></section>
+<section id="section-43" class="support-section tone-1 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">43</span>
+        <span class="badge label">Call 2, 3, 4</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">24:03</span>
+      </div>
+      <h2>Je garde toutes les réunions</h2>
+      <p>Un projet client peut avoir plusieurs calls. Chaque call ajoute des décisions, nuances et demandes.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Tu ne sais plus qui a validé quoi.</p></div>
+      <div><span>Après</span><p>Tu peux reconstruire l&#x27;historique complet.</p></div>
+    </div>
+    </div></section>
+<section id="section-44" class="support-section tone-2 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">44</span>
+        <span class="badge label">Ne rien perdre</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">24:14</span>
+      </div>
+      <h2>Ce que tu ne notes pas disparaît</h2>
+      <p>La mémoire humaine lâche vite. Les transcriptions évitent d&#x27;oublier les demandes, objections et arbitrages.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">44</div>
+      <p class="visual-kicker">Ne</p>
+      <div class="mini-flow">
+        <span>Après chaque call, extrais décisions et pr</span>
+        <span>Le projet reste fiable même après une sema</span>
+        <span>Tu reconstruis les décisions au feeling.</span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Après chaque call, extrais décisions et prochaines actions.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le projet reste fiable même après une semaine chargée.</p></li>
+      <li><span>03</span><p><b>Attention</b>Tu reconstruis les décisions au feeling.</p></li>
+    </ul>
+    </div></section>
+<section id="section-45" class="support-section tone-3 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">45</span>
+        <span class="badge label">Corriger</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">25:33</span>
+      </div>
+      <h2>Je ne corrige jamais sans noter</h2>
+      <p>Une correction doit avoir une trace : d&#x27;où elle vient, pourquoi je la fais, et comment je la teste.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Une correction doit avoir une trace : d&#x27;où elle vient, pourquoi je la fais, et comment je la teste.</p></li>
+      <li><span>2</span><p><b>Faire</b>Ajoute chaque correction à la checklist ou au journal des décisions.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Chaque changement a une raison.</p></li>
+    </ol>
+    </div></section>
+<section id="section-46" class="support-section tone-4 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">46</span>
+        <span class="badge label">Checklist</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">25:44</span>
+      </div>
+      <h2>Je transforme les retours en checklist Codex</h2>
+      <p>À partir d&#x27;un call ou d&#x27;un mail, je demande à Codex de sortir des tâches claires.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Colle la transcription et demande une checklist classée.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Les retours deviennent exécutables.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Codex travaille sur du flou.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Prompt à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Tu es mon assistant projet-client.
+
+Analyse la transcription de call ci-dessous.
+
+MISSION
+Transforme les retours du client en checklist actionnable pour la prochaine version.
+
+Classe chaque point en :
+- bug
+- amélioration
+- nouvelle demande
+- question à clarifier
+- règle métier à valider
+
+Pour chaque point, donne :
+- tâche claire
+- priorité
+- impact client
+- preuve attendue
+- risque si ce n&#x27;est pas traité
+
+Important :
+- ne mélange pas les demandes hors périmètre avec les corrections prévues
+- garde les formulations client utiles
+- prépare une section &quot;à valider avec le client&quot;
+
+Transcription :
+[COLLER_TRANSCRIPTION]</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-47" class="support-section tone-5 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">47</span>
+        <span class="badge label">Classer</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">26:29</span>
+      </div>
+      <h2>Je classe bug, amélioration et nouvelle demande</h2>
+      <p>Un bug se corrige. Une amélioration s&#x27;arbitre. Une nouvelle demande peut devenir un devis ou une évolution future.</p>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Type</th><th>Définition</th><th>Action</th></tr></thead><tbody><tr><td>Bug</td><td>Quelque chose ne fonctionne pas</td><td>Je corrige dans le périmètre.</td></tr>
+<tr><td>Amélioration</td><td>Le résultat peut être meilleur</td><td>Je priorise selon impact.</td></tr>
+<tr><td>Nouvelle demande</td><td>Le client ajoute une fonction</td><td>Je mets en évolution future ou devis.</td></tr>
+<tr><td>Règle métier</td><td>La logique client change</td><td>Je fais valider avant de modifier.</td></tr></tbody></table></div></div></section>
+<section id="section-48" class="support-section tone-6 layout-diagnostic"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">48</span>
+        <span class="badge label">Évolution future</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">26:42</span>
+      </div>
+      <h2>Une idée hors périmètre va en évolution future</h2>
+      <p>Même une petite demande de 20 minutes peut créer un précédent si elle est intégrée gratuitement.</p>
+    </div>
+    </div>
+    <div class="diagnostic">
+      <div><b>Signal</b><p>Même une petite demande de 20 minutes peut créer un précédent si elle est intégrée gratuitement.</p></div>
+      <div><b>Premier réflexe</b><p>Note l&#x27;idée dans les évolutions futures si elle n&#x27;est pas incluse.</p></div>
+      <div><b>Décision</b><p>Le client se sent entendu sans casser le périmètre.</p></div>
+    </div>
+    </div></section>
+<section id="section-49" class="support-section tone-1 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">49</span>
+        <span class="badge label">Historique</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">29:33</span>
+      </div>
+      <h2>Je garde l&#x27;historique des décisions</h2>
+      <p>Date, décision, impact, validé par qui. Ce petit historique évite les malentendus.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Historique</span>
+      <span>Crée un fichier decisions.md dans </span>
+      <span>Tu peux retrouver chaque arbitrage</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Crée un fichier decisions.md dans le dossier client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu peux retrouver chaque arbitrage.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le client revient sur une décision sans trace.</p></article>
+    </div>
+    </div></section>
+<section id="section-50" class="support-section tone-2 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">50</span>
+        <span class="badge label">Récap call</span>
+        <span class="badge ">Transformer les retours</span>
+        <span class="badge time">29:37</span>
+      </div>
+      <h2>J&#x27;envoie un récap après chaque call</h2>
+      <p>Le récap transforme la discussion en action : décisions, tâches, prochaines dates.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Envoie un récap court dans les 24 h.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client peut corriger immédiatement s&#x27;il y a un malentendu.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le call reste oral et donc fragile.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">50</div>
+      <p class="visual-kicker">Récap</p>
+      <div class="mini-flow">
+        <span>Envoie un récap court dans les 24 h.</span>
+        <span>Le client peut corriger immédiatement s&#x27;il</span>
+        <span>Le call reste oral et donc fragile.</span>
+      </div>
+    </aside>
+    </div></section>
+<section id="section-51" class="support-section tone-3 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">51</span>
+        <span class="badge label">Codex V2</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">28:48</span>
+      </div>
+      <h2>Je donne la checklist à Codex</h2>
+      <p>Quand les retours sont clairs, Codex peut travailler en boucle : tâche par tâche, test par test.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Colle la checklist et demande un traitement séquentiel.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La V2 avance vite et proprement.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Codex corrige au hasard.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Prompt à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Tu es Codex, responsable de la V2.
+
+Voici la checklist des retours client :
+[COLLER_CHECKLIST]
+
+MISSION
+Traite les tâches une par une.
+
+RÈGLES
+- chaque tâche doit être corrigée dans le projet
+- chaque tâche doit être testée
+- si un test MCP / navigateur est possible, utilise-le
+- ne traite pas les demandes hors périmètre sans les marquer comme &quot;évolution future&quot;
+- garde une trace des fichiers modifiés
+- prépare un résumé clair pour le client
+
+SORTIE ATTENDUE
+- tâches terminées
+- tâches non traitées et raison
+- tests réalisés
+- captures ou preuves si disponibles
+- message court pour envoyer la V2</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-52" class="support-section tone-4 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">52</span>
+        <span class="badge label">Tests</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">29:03</span>
+      </div>
+      <h2>Chaque tâche doit être testée</h2>
+      <p>Corriger ne suffit pas. Je dois vérifier que le résultat fonctionne.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Pour chaque tâche, demande une preuve de test.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La V2 est prête à envoyer.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu livres une correction non vérifiée.</p></article>
+    </div>
+    </div></section>
+<section id="section-53" class="support-section tone-5 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">53</span>
+        <span class="badge label">MCP</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">28:09</span>
+      </div>
+      <h2>J&#x27;utilise le navigateur ou MCP pour prouver</h2>
+      <p>Dans la vidéo, je demande des screenshots et des tests visuels. Le client doit voir l&#x27;avancement.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Demande à Codex de tester et capturer les écrans utiles.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La présentation V2 contient des preuves visibles.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Le client ne voit pas ce qui a changé.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Prompt à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Connecte-toi au projet avec le navigateur / MCP.
+
+MISSION
+Va sur ma V1, teste le parcours principal et prends les screenshots utiles.
+
+Je veux des preuves visuelles pour la présentation V2 :
+- écran d&#x27;accueil ou point d&#x27;entrée
+- action principale
+- résultat attendu
+- état d&#x27;erreur si un problème existe
+
+Ensuite :
+- place les captures dans le dossier presentation/v2/
+- propose les légendes client
+- ne parle pas technique, explique le bénéfice visible.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-54" class="support-section tone-6 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">54</span>
+        <span class="badge label">Bénéfice</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">27:26</span>
+      </div>
+      <h2>Je ne parle pas technique au client</h2>
+      <p>API, MCP, base de données : le client s&#x27;en fiche souvent. Il veut savoir ce que ça change pour lui.</p>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Mot technique</th><th>Phrase client</th></tr></thead><tbody><tr><td>MCP</td><td>J&#x27;ai testé le parcours comme un utilisateur réel.</td></tr>
+<tr><td>API</td><td>La solution peut recevoir ou envoyer l&#x27;information automatiquement.</td></tr>
+<tr><td>Base de données</td><td>Les demandes ne se perdent plus et restent consultables.</td></tr>
+<tr><td>Webhook</td><td>L&#x27;action se déclenche dès qu&#x27;un événement arrive.</td></tr>
+<tr><td>Logs</td><td>Je peux voir ce qui s&#x27;est passé si quelque chose bloque.</td></tr></tbody></table></div></div></section>
+<section id="section-55" class="support-section tone-1 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">55</span>
+        <span class="badge label">Réservation</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">27:36</span>
+      </div>
+      <h2>Je montre le bénéfice concret</h2>
+      <p>Exemple : &#x27;ton client peut réserver directement ici&#x27; vaut mieux que &#x27;j&#x27;ai connecté le module&#x27;.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Exemple : &#x27;ton client peut réserver directement ici&#x27; vaut mieux que &#x27;j&#x27;ai connecté le module&#x27;.</p></li>
+      <li><span>2</span><p><b>Faire</b>Décris ce que l&#x27;utilisateur final peut faire maintenant.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>Le résultat devient tangible.</p></li>
+    </ol>
+    </div></section>
+<section id="section-56" class="support-section tone-2 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">56</span>
+        <span class="badge label">Avancement visuel</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">27:55</span>
+      </div>
+      <h2>Je montre l&#x27;avancement visuellement</h2>
+      <p>Une présentation avec captures aide le client à comprendre vite.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Une présentation avec captures aide le client à comprendre vite.</p></div>
+      <div><b>À faire</b><p>Ajoute captures, étapes et légendes courtes.</p></div>
+      <div><b>À éviter</b><p>Il doit deviner ce que tu as changé.</p></div>
+      <div><b>Résultat</b><p>Le client voit l&#x27;avant / après.</p></div>
+    </div>
+    </div></section>
+<section id="section-57" class="support-section tone-3 layout-quote"><div class="wrap reveal"><blockquote><span>57</span><p>Tu avances point par point.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">57</span>
+        <span class="badge label">43 tâches</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">28:27</span>
+      </div>
+      <h2>Même 43 tâches deviennent gérables</h2>
+      <p>L&#x27;organisation transforme une grosse liste de retours en séquence simple.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Découpe, priorise, traite et teste.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu avances point par point.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu paniques devant le volume.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-58" class="support-section tone-4 layout-diagnostic"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">58</span>
+        <span class="badge label">Rapport V2</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">29:15</span>
+      </div>
+      <h2>La V2 peut être prête en quelques heures</h2>
+      <p>Si la checklist est propre, l&#x27;agent peut traiter beaucoup de points rapidement.</p>
+    </div>
+    </div>
+    <div class="diagnostic">
+      <div><b>Signal</b><p>Si la checklist est propre, l&#x27;agent peut traiter beaucoup de points rapidement.</p></div>
+      <div><b>Premier réflexe</b><p>Après correction, produis un résumé client et un rapport interne.</p></div>
+      <div><b>Décision</b><p>Tu sais ce qui a été traité.</p></div>
+    </div>
+    </div></section>
+<section id="section-59" class="support-section tone-5 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">59</span>
+        <span class="badge label">Ordre métier</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">29:25</span>
+      </div>
+      <h2>Je respecte l&#x27;ordre métier</h2>
+      <p>Réservation, relance, email, règles de validation : l&#x27;ordre compte dans une automatisation.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Ordre métier</span>
+      <span>Demande au client de confirmer la </span>
+      <span>La solution colle à la réalité du </span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Demande au client de confirmer la priorité métier.</p></article>
+      <article><b>Preuve que c'est bon</b><p>La solution colle à la réalité du client.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu optimises une séquence inutile.</p></article>
+    </div>
+    </div></section>
+<section id="section-60" class="support-section tone-6 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">60</span>
+        <span class="badge label">Preuve client</span>
+        <span class="badge ">Prouver l&#x27;avancement</span>
+        <span class="badge time">30:01</span>
+      </div>
+      <h2>La preuve client n&#x27;est pas une vidéo lourde</h2>
+      <p>Je préfère que le client teste réellement. La vidéo peut aider, mais elle ne remplace pas l&#x27;usage.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Donne un lien testable et une courte liste de tests.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client touche le produit.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Il regarde passivement sans valider.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">60</div>
+      <p class="visual-kicker">Preuve</p>
+      <div class="mini-flow">
+        <span>Donne un lien testable et une courte liste</span>
+        <span>Le client touche le produit.</span>
+        <span>Il regarde passivement sans valider.</span>
+      </div>
+    </aside>
+    </div></section>
+<section id="section-61" class="support-section tone-1 layout-opener"><div class="wrap reveal">
+        <div class="big-index">07</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">61</span>
+        <span class="badge label">Guide</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">29:42</span>
+      </div>
+      <h2>Je livre avec un guide d&#x27;utilisation</h2>
+      <p>Le client doit savoir quoi faire, quoi éviter et comment tester la solution.</p>
+    </div>
+    
+          <p class="act-line">Guide, clôture, maintenance, upsell doux</p>
+        </div>
+        <div class="opener-side">
+          <b>Livrer et vendre la suite</b>
+          <p>Je fais de la livraison un moment commercial.</p>
+          
+    <div class="flow">
+      <span>Guide</span>
+      <span>Prépare un guide court avec les ac</span>
+      <span>Le client utilise la solution sans</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-62" class="support-section tone-2 layout-cards"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">62</span>
+        <span class="badge label">Commercial</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">29:58</span>
+      </div>
+      <h2>La livraison est un moment commercial</h2>
+      <p>La valeur se montre à la livraison : présentation, test réel, guide et prochaine étape.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Prépare la livraison comme une restitution, pas comme un simple fichier.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client voit le chemin parcouru.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu termines un projet sans marquer la valeur.</p></article>
+    </div>
+    </div></section>
+<section id="section-63" class="support-section tone-3 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">63</span>
+        <span class="badge label">Mail livraison</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">29:58</span>
+      </div>
+      <h2>Le mail de livraison doit cadrer le test final</h2>
+      <p>Le client reçoit la solution, la présentation, le guide et une demande de validation.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Envoie un mail de livraison structuré.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sait comment clôturer la version.</p></article>
+      <article><b>Si je ne le fais pas</b><p>La livraison reste ouverte et floue.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Message à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Hello [PRENOM],
+
+La version est prête.
+
+Je t&#x27;ai préparé :
+- la solution testable : [LIEN_SOLUTION]
+- la présentation de livraison : [LIEN_PRESENTATION]
+- un guide court d&#x27;utilisation : [LIEN_GUIDE]
+
+Ce que tu peux vérifier :
+1. [TEST_1]
+2. [TEST_2]
+3. [TEST_3]
+
+Dis-moi si tout est bon pour clôturer cette version.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-64" class="support-section tone-4 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">64</span>
+        <span class="badge label">Usage</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">30:11</span>
+      </div>
+      <h2>Le client doit tester lui-même</h2>
+      <p>Le produit est pour lui. Il doit cliquer, essayer, ressentir ce qui marche.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">64</div>
+      <p class="visual-kicker">Usage</p>
+      <div class="mini-flow">
+        <span>Donne 3 tests simples à faire.</span>
+        <span>Le retour est basé sur l&#x27;usage.</span>
+        <span>Tu corriges des hypothèses.</span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Donne 3 tests simples à faire.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le retour est basé sur l&#x27;usage.</p></li>
+      <li><span>03</span><p><b>Attention</b>Tu corriges des hypothèses.</p></li>
+    </ul>
+    </div></section>
+<section id="section-65" class="support-section tone-5 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">65</span>
+        <span class="badge label">Attendre</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">30:21</span>
+      </div>
+      <h2>Je laisse 4-5 jours avant de proposer la suite</h2>
+      <p>L&#x27;upsell arrive mieux quand le client a utilisé la solution.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>L&#x27;upsell arrive mieux quand le client a utilisé la solution.</p></li>
+      <li><span>2</span><p><b>Faire</b>Laisse quelques jours d&#x27;usage avant de proposer une évolution.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>La suite arrive comme une amélioration naturelle.</p></li>
+    </ol>
+    </div></section>
+<section id="section-66" class="support-section tone-6 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">66</span>
+        <span class="badge label">Suite</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">30:35</span>
+      </div>
+      <h2>Je propose la suite sans forcer</h2>
+      <p>Je peux dire : j&#x27;ai repéré un point intéressant, teste encore et dis-moi si on en parle.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Formule l&#x27;upsell comme une piste, pas comme une pression.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client garde l&#x27;idée en tête.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu abîmes la relation en poussant trop.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Message à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Hello [PRENOM],
+
+Après quelques jours d&#x27;utilisation, je pense qu&#x27;on pourrait ajouter [IDEE_EVOLUTION].
+
+Ce n&#x27;est pas urgent pour utiliser la V1, mais ça peut devenir intéressant si tu veux aller plus loin sur [BENEFICE_CLIENT].
+
+Teste encore quelques jours et dis-moi si tu veux qu&#x27;on en parle.</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-67" class="support-section tone-1 layout-quote"><div class="wrap reveal"><blockquote><span>67</span><p>Le client sait ce qu&#x27;il paie chaque mois.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">67</span>
+        <span class="badge label">Coûts</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">15:19</span>
+      </div>
+      <h2>Je sépare prix projet, outils et maintenance</h2>
+      <p>OpenAI API à 20 €, Supabase, hébergement : ces coûts doivent être visibles.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Crée une petite section coûts récurrents dans la livraison.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sait ce qu&#x27;il paie chaque mois.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu as des coûts cachés.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-68" class="support-section tone-2 layout-diagnostic"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">68</span>
+        <span class="badge label">Clôturer</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">21:17</span>
+      </div>
+      <h2>Je sais quand dire done</h2>
+      <p>Pour un projet à 8k, trois modifications peuvent suffire. Ensuite, la suite devient une nouvelle phase.</p>
+    </div>
+    </div>
+    <div class="diagnostic">
+      <div><b>Signal</b><p>Pour un projet à 8k, trois modifications peuvent suffire. Ensuite, la suite devient une nouvelle phase.</p></div>
+      <div><b>Premier réflexe</b><p>Prépare une phrase de clôture de version.</p></div>
+      <div><b>Décision</b><p>La V1/V2/V3 ne s&#x27;étire pas indéfiniment.</p></div>
+    </div>
+    </div></section>
+<section id="section-69" class="support-section tone-3 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">69</span>
+        <span class="badge label">Satisfaction</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">05:53</span>
+      </div>
+      <h2>Un projet rapide prépare l&#x27;upsell</h2>
+      <p>Si le projet finit vite et bien, je peux proposer une suite sur une base saine.</p>
+    </div>
+    
+    <div class="flow">
+      <span>Satisfaction</span>
+      <span>Ne laisse pas traîner les retours </span>
+      <span>Le client associe ton travail à un</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Ne laisse pas traîner les retours et les validations.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client associe ton travail à un rythme efficace.</p></article>
+      <article><b>Si je ne le fais pas</b><p>La suite devient impossible parce que le premier projet fatigue tout le monde.</p></article>
+    </div>
+    </div></section>
+<section id="section-70" class="support-section tone-4 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">70</span>
+        <span class="badge label">Post-livraison</span>
+        <span class="badge ">Livrer et vendre la suite</span>
+        <span class="badge time">30:21</span>
+      </div>
+      <h2>Je continue à suivre sans envahir</h2>
+      <p>Après livraison, je laisse le client prendre en main puis je reviens avec une piste utile.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Prévois un point à J+5 ou J+7.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le client sent que tu restes présent.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu disparais après la facture.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">70</div>
+      <p class="visual-kicker">Post-livraison</p>
+      <div class="mini-flow">
+        <span>Prévois un point à J+5 ou J+7.</span>
+        <span>Le client sent que tu restes présent.</span>
+        <span>Tu disparais après la facture.</span>
+      </div>
+    </aside>
+    </div></section>
+<section id="section-71" class="support-section tone-5 layout-opener"><div class="wrap reveal">
+        <div class="big-index">08</div>
+        <div class="opener-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">71</span>
+        <span class="badge label">Dossier</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">31:31</span>
+      </div>
+      <h2>J&#x27;organise le dossier client pour scaler</h2>
+      <p>Si je veux gérer 10 clients, je ne peux pas chercher les fichiers à chaque fois.</p>
+    </div>
+    
+          <p class="act-line">Dossier client, présentations, calls et projet</p>
+        </div>
+        <div class="opener-side">
+          <b>Scaler l&#x27;organisation</b>
+          <p>Je peux gérer plusieurs clients parce que tout est rangé.</p>
+          
+    <div class="flow">
+      <span>Dossier</span>
+      <span>Crée une arborescence stable pour </span>
+      <span>Tu peux ouvrir le bon dossier et r</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+        </div>
+        </div></section>
+<section id="section-72" class="support-section tone-6 layout-wide"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">72</span>
+        <span class="badge label">Présentation</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">31:31</span>
+      </div>
+      <h2>Le dossier presentation garde audit, cadrage et versions</h2>
+      <p>Audit, cadrage, V1, V2, V3 : toutes les pages client vivent au même endroit.</p>
+    </div>
+    <div class="tree"><pre>[NOM_CLIENT]/
+  presentation/
+    audit/
+    cadrage/
+    v1/
+    v2/
+    livraison/
+  calls/
+    call-01.md
+    call-02.md
+  projet/
+    source/
+    prompts/
+    tests/
+  decisions.md
+  retours-client.md
+  prochaines-actions.md</pre></div></div></section>
+<section id="section-73" class="support-section tone-1 layout-compare"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">73</span>
+        <span class="badge label">Calls</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">32:00</span>
+      </div>
+      <h2>Le dossier calls garde la mémoire brute</h2>
+      <p>Chaque meet ou call client a sa transcription.</p>
+    </div>
+    </div>
+    <div class="before-after">
+      <div><span>Avant</span><p>Tu perds les nuances client.</p></div>
+      <div><span>Après</span><p>Tu peux redonner le contexte à Codex.</p></div>
+    </div>
+    </div></section>
+<section id="section-74" class="support-section tone-2 layout-check"><div class="wrap reveal"><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">74</span>
+        <span class="badge label">Projet</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">32:11</span>
+      </div>
+      <h2>Le dossier projet garde le build</h2>
+      <p>Le code, les prompts, les tests et les fichiers de solution ne doivent pas se mélanger aux présentations.</p>
+    </div>
+    
+    <aside class="visual-card">
+      <div class="visual-index">74</div>
+      <p class="visual-kicker">Projet</p>
+      <div class="mini-flow">
+        <span>Sépare projet, présentation et calls.</span>
+        <span>Le dossier reste lisible.</span>
+        <span>Tu envoies au client des fichiers internes</span>
+      </div>
+    </aside>
+    </div>
+    <ul class="checklist">
+      <li><span>01</span><p><b>Action</b>Sépare projet, présentation et calls.</p></li>
+      <li><span>02</span><p><b>Validation</b>Le dossier reste lisible.</p></li>
+      <li><span>03</span><p><b>Attention</b>Tu envoies au client des fichiers internes par erreur.</p></li>
+    </ul>
+    </div></section>
+<section id="section-75" class="support-section tone-3 layout-timeline"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">75</span>
+        <span class="badge label">Décisions</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">29:33</span>
+      </div>
+      <h2>Je garde decisions.md</h2>
+      <p>Ce fichier évite les débats inutiles. Il contient ce qui a été validé.</p>
+    </div>
+    
+    <ol class="timeline">
+      <li><span>1</span><p><b>Préparer</b>Ce fichier évite les débats inutiles. Il contient ce qui a été validé.</p></li>
+      <li><span>2</span><p><b>Faire</b>Ajoute date, décision, impact, validé par.</p></li>
+      <li><span>3</span><p><b>Vérifier</b>La mémoire du projet est claire.</p></li>
+    </ol>
+    </div></section>
+<section id="section-76" class="support-section tone-4 layout-matrix"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">76</span>
+        <span class="badge label">Actions</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">33:42</span>
+      </div>
+      <h2>Je garde prochaines-actions.md</h2>
+      <p>Un projet propre a toujours une prochaine action visible.</p>
+    </div>
+    
+    <div class="matrix">
+      <div><b>Pourquoi</b><p>Un projet propre a toujours une prochaine action visible.</p></div>
+      <div><b>À faire</b><p>Mets à jour ce fichier après chaque call ou livraison.</p></div>
+      <div><b>À éviter</b><p>Tu ouvres le dossier et tu repars de zéro.</p></div>
+      <div><b>Résultat</b><p>Tu sais exactement quoi faire ensuite.</p></div>
+    </div>
+    </div></section>
+<section id="section-77" class="support-section tone-5 layout-quote"><div class="wrap reveal"><blockquote><span>77</span><p>Codex lit le bon contexte.</p></blockquote><div>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">77</span>
+        <span class="badge label">Organisation Codex</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">34:00</span>
+      </div>
+      <h2>Je peux ouvrir un terminal par client</h2>
+      <p>Avec un dossier piloté, chaque client devient un contexte clair pour Codex.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Lance l&#x27;agent dans le bon dossier client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Codex lit le bon contexte.</p></article>
+      <article><b>Si je ne le fais pas</b><p>L&#x27;agent mélange plusieurs projets.</p></article>
+    </div>
+    </div></div></section>
+<section id="section-78" class="support-section tone-6 layout-prompt"><div class="wrap reveal">
+        <div class="prompt-copy">
+          
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">78</span>
+        <span class="badge label">Prompt rangement</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">33:42</span>
+      </div>
+      <h2>Je demande à Codex de ranger le projet</h2>
+      <p>L&#x27;organisation peut aussi être déléguée, tant que je donne des règles claires.</p>
+    </div>
+    
+          
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Utilise un prompt d&#x27;organisation après chaque phase importante.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Le dossier reste propre sans y passer une heure.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu accumules brouillons, liens, fichiers et calls.</p></article>
+    </div>
+    
+        </div>
+        
+    <div class="prompt-panel">
+      <div class="prompt-head"><span>Prompt à copier</span><button class="copy-btn" type="button">Copier</button></div>
+      <pre><code>Tu es Codex. Tu es responsable organisation projet-client.
+
+MISSION
+Range le dossier courant comme un vrai dossier client professionnel.
+
+Tu dois organiser :
+- présentations audit / cadrage / V1 / V2 / livraison
+- notes et transcriptions de calls
+- décisions client
+- retours client
+- prompts utilisés
+- tests et preuves
+- livrables
+- prochaines actions
+
+RÈGLES
+Ne supprime rien définitivement.
+Crée une archive si nécessaire.
+Ne mélange pas brouillons et livrables.
+Garde un README clair.
+
+SORTIE ATTENDUE
+- README.md
+- decisions.md
+- retours-client.md
+- prochaines-actions.md
+- presentation/
+- calls/
+- projet/
+- livraison/</code></pre>
+    </div>
+    
+        </div></section>
+<section id="section-79" class="support-section tone-1 layout-flow"><div class="wrap reveal">
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">79</span>
+        <span class="badge label">10 projets</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">33:48</span>
+      </div>
+      <h2>La structure me permet de gérer 10 projets</h2>
+      <p>La méthode n&#x27;est pas faite pour un seul client. Elle rend plusieurs projets pilotables en parallèle.</p>
+    </div>
+    
+    <div class="flow">
+      <span>10 projets</span>
+      <span>Répète la même arborescence sur ch</span>
+      <span>Tu passes d&#x27;un client à l&#x27;autre sa</span>
+      <span>Prochaine étape</span>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Répète la même arborescence sur chaque client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu passes d&#x27;un client à l&#x27;autre sans perdre le fil.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu gères tout à la mémoire.</p></article>
+    </div>
+    </div></section>
+<section id="section-80" class="support-section tone-2 layout-story"><div class="wrap reveal"><article>
+    <div class="section-head">
+      <div class="meta">
+        <span class="badge num">80</span>
+        <span class="badge label">Récap</span>
+        <span class="badge ">Scaler l&#x27;organisation</span>
+        <span class="badge time">34:20</span>
+      </div>
+      <h2>Ce que tu dois garder de la séance</h2>
+      <p>Organisation, relance, cadrage, V1, retours, checklist, tests, livraison, dossier. C&#x27;est cette structure qui rend le travail IA professionnel.</p>
+    </div>
+    
+    <div class="cards">
+      <article><b>Ce que je fais</b><p>Applique ces 23 tips dès ton prochain projet client.</p></article>
+      <article><b>Preuve que c'est bon</b><p>Tu peux livrer vite sans sacrifier le suivi.</p></article>
+      <article><b>Si je ne le fais pas</b><p>Tu restes bon techniquement mais fragile côté client.</p></article>
+    </div>
+    </article>
+    <aside class="visual-card">
+      <div class="visual-index">80</div>
+      <p class="visual-kicker">Récap</p>
+      <div class="mini-flow">
+        <span>Applique ces 23 tips dès ton prochain proj</span>
+        <span>Tu peux livrer vite sans sacrifier le suiv</span>
+        <span>Tu restes bon techniquement mais fragile c</span>
+      </div>
+    </aside>
+    </div></section></main>
+<footer class="footer"><div class="wrap"><p>Support construit à partir de la transcription complète de la séance 21. Images utilisées : logo DENEM uniquement. Les visuels de méthode sont réalisés en HTML/CSS pour respecter la contrainte de ne pas ajouter d'images externes.</p></div></footer>
+<script>
+const progress=document.getElementById('progress');
+const counter=document.getElementById('counter');
+const sections=[...document.querySelectorAll('.support-section')];
+function updateProgress(){
+  const doc=document.documentElement;
+  const ratio=doc.scrollTop/(doc.scrollHeight-doc.clientHeight);
+  progress.style.width=(ratio*100)+'%';
+}
+document.addEventListener('scroll',updateProgress,{passive:true});
+updateProgress();
+const reveal=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+const sectionWatch=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const idx=sections.indexOf(entry.target)+1;counter.textContent=String(idx).padStart(2,'0')+' / '+sections.length;}})},{threshold:.35});
+sections.forEach(section=>sectionWatch.observe(section));
+document.querySelectorAll('.copy-btn').forEach(btn=>{
+  btn.addEventListener('click',async()=>{
+    const panel=btn.closest('.prompt-panel');
+    const text=panel.querySelector('code').innerText;
+    await navigator.clipboard.writeText(text);
+    btn.classList.add('copied');
+    btn.textContent='Copié';
+    setTimeout(()=>{btn.classList.remove('copied');btn.textContent='Copier';},1400);
+  });
+});
+</script>
+</body>
+</html>
