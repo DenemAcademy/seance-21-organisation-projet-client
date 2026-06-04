@@ -2167,7 +2167,7 @@ document.addEventListener('scroll',updateProgress,{passive:true});
 updateProgress();
 const reveal=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
-const sectionWatch=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const idx=sections.indexOf(entry.target)+1;counter.textContent=String(idx).padStart(2,'0')+' / '+sections.length;}})},{threshold:.35});
+const sectionWatch=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const idx=sections.indexOf(entry.target)+1;if(counter) counter.textContent=String(idx).padStart(2,'0')+' / '+sections.length;}})},{threshold:.35});
 sections.forEach(section=>sectionWatch.observe(section));
 document.querySelectorAll('.copy-btn').forEach(btn=>{
   btn.addEventListener('click',async()=>{
